@@ -127,34 +127,33 @@ body.light-theme {
   }
 
   .language-select {
+    margin: 10px 0;
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 8px;
     color: #212529;
-    font-size: 14px;
-    padding: 8px 10px;
+    font-size: 12px; /* Font o'lchamini kichraytirish */
+    padding: 3px 4px; /* Kichikroq padding */
     cursor: pointer;
-    // -webkit-appearance: none;
-    // -moz-appearance: none;
+
     img {
-      width: 30px;
-      height: 30px;
+      width: 16px; /* Rasm o'lchamini kichraytirish */
+      height: 16px; /* Rasm o'lchamini kichraytirish */
     }
 
     option {
       background-color: #ffffff;
       color: #212529;
-      padding: 10px;
+      padding: 8px; /* Kichikroq padding */
       display: flex;
-      align-items: center; /* Rasm va matnni gorizontal ravishda joylashtirish */
+      align-items: center;
     }
 
     option img {
-      margin-right: 10px; /* Rasm va matn orasidagi bo'shliq */
-      width: 16px;
-      height: 16px;
+      margin-right: 8px; /* Rasm va matn orasidagi bo'shliq */
+      width: 14px;
+      height: 14px;
     }
-
     &:hover,
     &:focus {
       border-color: #0062cc;
@@ -184,23 +183,32 @@ body.dark-theme {
   }
 
   .language-select {
+    margin: 10px 0;
     background-color: #333;
     border-radius: 8px;
     border: 1px solid #444;
     color: #fff;
-    font-size: 14px;
-    padding: 8px 10px;
+    font-size: 12px; /* Font o'lchamini kichraytirish */
+    padding: 3px 4px; /* Kichikroq padding */
     cursor: pointer;
 
     img {
-      width: 30px;
-      height: 30px;
+      width: 16px; /* Rasm o'lchamini kichraytirish */
+      height: 16px; /* Rasm o'lchamini kichraytirish */
+    }
+
+    option img {
+      margin-right: 8px; /* Rasm va matn orasidagi bo'shliq */
+      width: 14px;
+      height: 14px;
     }
 
     option {
-      background-color: #333;
-      color: #240404;
-      padding: 10px;
+      background-color: #ffffff;
+      color: #212529;
+      padding: 8px; /* Kichikroq padding */
+      display: flex;
+      align-items: center;
     }
 
     &:hover,
@@ -213,4 +221,8 @@ body.dark-theme {
 .css-13cymwt-control,
 .css-1nmdiq5-menu {
   background-color: inherit !important;
+}
+
+.css-13cymwt-control {
+  min-height: 5px !important;
 }

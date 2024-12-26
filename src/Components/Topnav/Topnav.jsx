@@ -3,7 +3,7 @@ import "./topnav.scss";
 import uz from "../../img/uz.png";
 import en from "../../img/en.png";
 import ru from "../../img/ru.png";
-import logo from "../../img/Screenshot 2024-10-08 191403.png";
+import logo from "../../img/logoads.png";
 import { useTranslation } from "react-i18next";
 import "../../i18n";
 import Select from "react-select";

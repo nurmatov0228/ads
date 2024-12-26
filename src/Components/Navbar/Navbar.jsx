@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Menu, MenuItem, IconButton } from "@mui/material";
-import { Search, Phone, AccessTime, Brightness4 } from "@mui/icons-material";
+import {
+  Search,
+  Phone,
+  AccessTime,
+  Brightness4,
+  Brightness7,
+} from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 import "./navbar.scss";
 import { useTranslation } from "react-i18next";
@@ -107,12 +113,17 @@ const Navbar = () => {
             {/* Dark Mode Toggle */}
             <div className="navbar__theme-switch">
               <IconButton onClick={toggleDarkMode}>
-                <Brightness4
-                  className="navbar__icon-darkmode"
-                  style={{
-                    color: darkMode ? "#FFD700" : "#0000FF", // Tun rejimida sariq, kun rejimida ko'k
-                  }}
-                />
+                {darkMode ? (
+                  <Brightness4
+                    className="navbar__icon-darkmode"
+                    style={{ color: "#FFD700" }} // Tun rejimida sariq rang
+                  />
+                ) : (
+                  <Brightness7
+                    className="navbar__icon-darkmode"
+                    style={{ color: "#0000FF" }} // Kun rejimida ko'k rang
+                  />
+                )}
               </IconButton>
             </div>
           </div>

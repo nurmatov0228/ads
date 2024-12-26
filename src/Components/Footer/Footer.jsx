@@ -8,7 +8,7 @@ import YouTube from "../../img/youtube.png";
 import Instagram from "../../img/instagram.png";
 import Facebook from "../../img/facebook.png";
 import vk from "../../img/vk.png";
-import logo from "../../img/Screenshot 2024-10-08 191403.png";
+import logo from "../../img/logoads.png";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
