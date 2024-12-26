@@ -1,4 +1,4 @@
-header .header-top {
+.header-top {
   border-bottom: 1px solid rgba(229, 237, 239, 0.2);
   color: #fff;
   background-color: rgb(3, 22, 29);
@@ -90,25 +90,6 @@ header .header-top {
         }
       }
     }
-
-    .number {
-      display: none;
-      flex-direction: column-reverse;
-      gap: 8px;
-
-      .num-btn {
-        align-items: center;
-        display: flex;
-        font-family: "Inter", sans-serif;
-        gap: 8px;
-
-        .num-text {
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 19px;
-        }
-      }
-    }
   }
 }
 
@@ -143,14 +124,40 @@ body.light-theme {
         color: #fff; /* Hover holatda tugma matni */
       }
     }
+  }
 
-    .language-item {
-      color: #212529; /* Qora matn */
+  .language-select {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #212529;
+    font-size: 14px;
+    padding: 8px 10px;
+    cursor: pointer;
+    // -webkit-appearance: none;
+    // -moz-appearance: none;
+    img {
+      width: 30px;
+      height: 30px;
+    }
 
-      &:hover {
-        color: #00caff;
-        transition: 0.3s;
-      }
+    option {
+      background-color: #ffffff;
+      color: #212529;
+      padding: 10px;
+      display: flex;
+      align-items: center; /* Rasm va matnni gorizontal ravishda joylashtirish */
+    }
+
+    option img {
+      margin-right: 10px; /* Rasm va matn orasidagi bo'shliq */
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: #0062cc;
     }
   }
 }
@@ -174,14 +181,36 @@ body.dark-theme {
         color: #fff; /* Hover holatda tugma matni */
       }
     }
+  }
 
-    .language-item {
-      color: #fff;
+  .language-select {
+    background-color: #333;
+    border-radius: 8px;
+    border: 1px solid #444;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 10px;
+    cursor: pointer;
 
-      &:hover {
-        color: #00caff;
-        transition: 0.3s;
-      }
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    option {
+      background-color: #333;
+      color: #240404;
+      padding: 10px;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: #00caff;
     }
   }
+}
+
+.css-13cymwt-control,
+.css-1nmdiq5-menu {
+  background-color: inherit !important;
 }

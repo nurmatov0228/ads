@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./topnav.scss";
 import uz from "../../img/uz.png";
 import en from "../../img/en.png";
@@ -6,11 +6,19 @@ import ru from "../../img/ru.png";
 import logo from "../../img/Screenshot 2024-10-08 191403.png";
 import { useTranslation } from "react-i18next";
 import "../../i18n";
+import Select from "react-select";
 
+// Tilni o'zgartirish funksiyasi
 const Topnav = () => {
   const { t, i18n } = useTranslation();
+  const [selectedLanguage, setSelectedLanguage] = useState({});
 
-  // Tilni o'zgartirish funksiyasi
+  const options = [
+    { value: "uz", label: <img src={uz} alt="uz" /> },
+    { value: "en", label: <img src={en} alt="en" /> },
+    { value: "ru", label: <img src={ru} alt="ru" /> },
+  ];
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng); // Tilni o'zgartirish
     localStorage.setItem("language", lng); // Tanlangan tilni localStorage'ga saqlash
@@ -22,6 +30,11 @@ const Topnav = () => {
     if (savedLanguage && savedLanguage !== i18n.language) {
       i18n.changeLanguage(savedLanguage);
     }
+
+    // Saqlangan tildan `selectedLanguage` qiymatini o'rnatish
+    setSelectedLanguage(
+      options.find((option) => option.value === savedLanguage) || options[0]
+    );
   }, [i18n]);
 
   return (
@@ -47,55 +60,21 @@ const Topnav = () => {
                 />
                 <p className="link-text">{t("telegram")}</p>
               </a>
-              <a href={logo} download>
-                <button className="link-btn three">
-                  <img
-                    src="https://www.inoutads.uz/_nuxt/download.5c2f07e8.svg"
-                    alt="download"
-                    width="20"
-                    height="20"
-                  />
-                  <p className="link-text">{t("presentation")}</p>
-                </button>
-              </a>
-              <a href="#" className="link-btn three">
-                <img
-                  src="https://www.inoutads.uz/_nuxt/sms.32d91e6a.svg"
-                  alt="sms"
-                  width="20"
-                  height="20"
-                />
-                <p className="link-text">{t("applyNow")}</p>
-              </a>
             </div>
           </div>
         </div>
         <div className="languages desktop">
           <div className="menu-languages">
-            <a
-              onClick={() => changeLanguage("uz")}
-              className={`language-item ${
-                i18n.language === "uz" ? "active" : ""
-              }`}
-            >
-              <img src={uz} alt="flag" /> uz
-            </a>
-            <a
-              onClick={() => changeLanguage("en")}
-              className={`language-item ${
-                i18n.language === "en" ? "active" : ""
-              }`}
-            >
-              <img src={en} alt="flag" /> en
-            </a>
-            <a
-              onClick={() => changeLanguage("ru")}
-              className={`language-item ${
-                i18n.language === "ru" ? "active" : ""
-              }`}
-            >
-              <img src={ru} alt="flag" /> ru
-            </a>
+            {/* react-select bilan rasmli til tanlash */}
+            <Select
+              value={selectedLanguage} // Tanlangan tilni value sifatida berish
+              options={options}
+              onChange={(selectedOption) => {
+                changeLanguage(selectedOption.value); // Tilni o'zgartirish
+                setSelectedLanguage(selectedOption); // Tanlangan tilni saqlash
+              }}
+              className="language-select"
+            />
           </div>
         </div>
       </div>

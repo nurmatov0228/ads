@@ -1,23 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { Menu, MenuItem, IconButton, Switch } from "@mui/material";
-import {
-  Search,
-  Phone,
-  AccessTime,
-  Brightness4,
-  Brightness7,
-} from "@mui/icons-material";
+import { Menu, MenuItem, IconButton } from "@mui/material";
+import { Search, Phone, AccessTime, Brightness4 } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 import "./navbar.scss";
-import { useTranslation } from "react-i18next"; // Tarjima uchun qo'shildi
+import { useTranslation } from "react-i18next";
 import { ReactTyped } from "react-typed";
 
 const Navbar = () => {
-  const { t } = useTranslation(); // useTranslation hook orqali t funksiyasini olish
+  const { t } = useTranslation();
   const [anchorEl, setAnchorEl] = useState(null);
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("theme") === "dark"
-  );
+
+  // Default dark mode holatini "dark" ga sozlash
+  const [darkMode, setDarkMode] = useState(() => {
+    const theme = localStorage.getItem("theme");
+    return theme ? theme === "dark" : true; // Agar tanlanmagan bo'lsa, default tun rejimi
+  });
 
   useEffect(() => {
     document.body.className = darkMode ? "dark-theme" : "light-theme";
@@ -42,10 +39,10 @@ const Navbar = () => {
         <div className="navbar__container">
           <div className="navbar__left">
             <NavLink to="/" className="navbar__link">
-              {t("home")} {/* Asosiy sahifa matni */}
+              {t("home")}
             </NavLink>
             <a className="navbar__link" onClick={handleClick}>
-              {t("services")} {/* Xizmatlar */}
+              {t("services")}
             </a>
             <Menu
               className="navbar__menu"
@@ -54,34 +51,24 @@ const Navbar = () => {
               onClose={handleClose}
             >
               <MenuItem className="menuitem" onClick={handleClose}>
-                <NavLink to="/services">{t("onRoad")}</NavLink>{" "}
-                {/* Yo'lbo'yida */}
+                <NavLink to="/services">{t("onRoad")}</NavLink>
               </MenuItem>
               <MenuItem className="menuitem" onClick={handleClose}>
-                <NavLink to="/services">{t("onBridges")}</NavLink>{" "}
-                {/* Ko'priklarda */}
+                <NavLink to="/services">{t("onBridges")}</NavLink>
               </MenuItem>
               <MenuItem className="menuitem" onClick={handleClose}>
-                <NavLink to="/services">{t("ledScreen")}</NavLink>{" "}
-                {/* Led ekran */}
+                <NavLink to="/services">{t("ledScreen")}</NavLink>
               </MenuItem>
               <MenuItem className="menuitem" onClick={handleClose}>
-                <NavLink to={"/services"}>{t("roadAds")}</NavLink>{" "}
-                {/* Katta yo'lda */}
+                <NavLink to={"/services"}>{t("roadAds")}</NavLink>
               </MenuItem>
             </Menu>
             <NavLink to="/about" className="navbar__link">
-              {t("aboutUs")} {/* Biz haqimizda */}
+              {t("aboutUs")}
             </NavLink>
             <NavLink to="/contact" className="navbar__link">
-              {t("contact")} {/* Kontakt */}
+              {t("contact")}
             </NavLink>
-            <NavLink to="/vacancy" className="navbar__link">
-              {t("vacancy")} {/* Vakansiya */}
-            </NavLink>
-            <a href="#reviews" className="navbar__link">
-              {t("reviews")} {/* Sharhlar */}
-            </a>
           </div>
 
           <div className="navbar__right">
@@ -107,7 +94,7 @@ const Navbar = () => {
             <div className="navbar__contact">
               <div className="navbar__contact__flex">
                 <AccessTime className="navbar__icon" />
-                <span>{t("workingHours")}</span> {/* Ish vaqti */}
+                <span>{t("workingHours")}</span>
               </div>
               <div className="navbar__contact__flex">
                 <Phone className="navbar__icon" />
@@ -117,11 +104,16 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Kun/Tun rejimini qo'shamiz */}
+            {/* Dark Mode Toggle */}
             <div className="navbar__theme-switch">
-              <Brightness4 className="navbar__icon" />
-              <Switch checked={darkMode} onChange={toggleDarkMode} />
-              <Brightness7 className="navbar__icon" />
+              <IconButton onClick={toggleDarkMode}>
+                <Brightness4
+                  className="navbar__icon-darkmode"
+                  style={{
+                    color: darkMode ? "#FFD700" : "#0000FF", // Tun rejimida sariq, kun rejimida ko'k
+                  }}
+                />
+              </IconButton>
             </div>
           </div>
         </div>
