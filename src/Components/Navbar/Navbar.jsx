@@ -114,12 +114,12 @@ const Navbar = () => {
             <div className="navbar__theme-switch">
               <IconButton onClick={toggleDarkMode}>
                 {darkMode ? (
-                  <Brightness4
+                  <Brightness7
                     className="navbar__icon-darkmode"
                     style={{ color: "#FFD700" }} // Tun rejimida sariq rang
                   />
                 ) : (
-                  <Brightness7
+                  <Brightness4
                     className="navbar__icon-darkmode"
                     style={{ color: "#0000FF" }} // Kun rejimida ko'k rang
                   />
