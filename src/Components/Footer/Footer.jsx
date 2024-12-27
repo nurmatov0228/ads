@@ -9,6 +9,7 @@ import Instagram from "../../img/instagram.png";
 import Facebook from "../../img/facebook.png";
 import vk from "../../img/vk.png";
 import logo from "../../img/logoads2.jpg";
+import logo1 from "../../img/TAS2oqrangi.png";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -22,7 +23,7 @@ const Footer = () => {
           <div className="footer__top">
             <NavLink className="footer__logo" to={"/"}>
               <img
-                src={logo}
+                src={logo1}
                 alt={t("footer.logoAlt")}
                 className="footer__logo-img"
               />

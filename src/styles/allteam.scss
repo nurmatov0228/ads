@@ -1,9 +1,10 @@
 #allteam {
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+  .slider-container {
+    max-width: 1380px;
+    overflow: hidden;
+
+    .slick-arrow {
+      display: none !important;
+    }
   }
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/about.scss";
-import logo from "../img/Screenshot 2024-10-08 191403.png";
+import logo from "../img/logotas2.jpg";
 import { useTranslation } from "react-i18next";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";

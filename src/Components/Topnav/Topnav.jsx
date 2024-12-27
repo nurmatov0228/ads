@@ -3,10 +3,11 @@ import "./topnav.scss";
 import uz from "../../img/uz.png";
 import en from "../../img/en.png";
 import ru from "../../img/ru.png";
-import logo from "../../img/logoads.png";
+import logo from "../../img/TAS2oqrangi.png";
 import { useTranslation } from "react-i18next";
 import "../../i18n";
 import Select from "react-select";
+import { NavLink } from "react-router-dom";
 
 // Tilni o'zgartirish funksiyasi
 const Topnav = () => {
@@ -41,9 +42,9 @@ const Topnav = () => {
     <div className="header-top p-2">
       <div className="container">
         <div className="logo-wrapper">
-          <a href="/" className="logo">
+          <NavLink to="/" className="logo">
             <img alt="in out" width="83" height="72" src={logo} />
-          </a>
+          </NavLink>
           <div className="header-top-wrapper">
             <div className="advertasing"></div>
             <div className="link">

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import "../Components/Team/team.scss";
 import "../styles/allteam.scss";
 import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import qiz1 from "../img/qiz1.png";
@@ -12,6 +11,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { useTranslation } from "react-i18next";
+import Slider from "react-slick";
 
 const Allteam = () => {
   const { t } = useTranslation();
@@ -75,40 +75,53 @@ const Allteam = () => {
       setZoomedIndex(index); // Aks holda, zoom qilish
     }
   };
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
+
   return (
     <div className="team-slider" id="allteam">
-      <div className="container">
-        {teamMembers.map((member, index) => (
-          <div key={index} className="team-slider__item">
-            <div
-              className={`team-slider__image ${
-                zoomedIndex === index ? "zoomed" : ""
-              }`}
-            >
-              <img src={member.image} alt={member.name} />
+      <div className="slider-container container">
+        <Slider {...settings}>
+          {teamMembers.map((member, index) => (
+            <div key={index} className="team-slider__item">
               <div
-                className="zoom-icon"
-                onClick={() => handleZoomToggle(index)}
+                className={`team-slider__image ${
+                  zoomedIndex === index ? "zoomed" : ""
+                }`}
               >
-                <ZoomInIcon />
+                <img src={member.image} alt={member.name} />
+                <div
+                  className="zoom-icon"
+                  onClick={() => handleZoomToggle(index)}
+                >
+                  <ZoomInIcon />
+                </div>
               </div>
+              <h3>{member.name}</h3>
+              <p>{member.position}</p>
+              <div className="social-links">
+                <a href={member.instagram}>
+                  <InstagramIcon style={{ fontSize: 30 }} />
+                </a>
+                <a href={member.telegram}>
+                  <TelegramIcon style={{ fontSize: 30 }} />
+                </a>
+                <a href={member.phone}>
+                  <PhoneIcon style={{ fontSize: 30 }} />
+                </a>
+              </div>
+              <button className="rate-button btn1">{t("team.Baholash")}</button>
             </div>
-            <h3>{member.name}</h3>
-            <p>{member.position}</p>
-            <div className="social-links">
-              <a href={member.instagram}>
-                <InstagramIcon style={{ fontSize: 30 }} />
-              </a>
-              <a href={member.telegram}>
-                <TelegramIcon style={{ fontSize: 30 }} />
-              </a>
-              <a href={member.phone}>
-                <PhoneIcon style={{ fontSize: 30 }} />
-              </a>
-            </div>
-            <button className="rate-button btn1">{t("team.Baholash")}</button>
-          </div>
-        ))}
+          ))}
+        </Slider>
       </div>
     </div>
   );
