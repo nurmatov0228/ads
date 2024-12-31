@@ -1,25 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next"; // Tarjima uchun
 import "./intro.scss";
-import video1 from "../../../img/video1.mp4";
-import video2 from "../../../img/video2.mp4";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import PauseIcon from "@mui/icons-material/Pause";
 import { Modal, TextField } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { toast } from "react-toastify";
 import axios from "axios";
-
-const videos = [
-  {
-    title: "video1_title", // Tarjima kaliti
-    video: video1,
-  },
-  {
-    title: "video2_title", // Tarjima kaliti
-    video: video2,
-  },
-];
 
 const Intro = () => {
   const { t } = useTranslation(); // Tarjima hook
@@ -89,67 +74,17 @@ const Intro = () => {
     }
   };
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const videoRef = useRef(null);
-  const [dragStart, setDragStart] = useState(0);
-
-  const handlePlayPause = () => {
-    const video = videoRef.current;
-    if (isPlaying) {
-      video.pause();
-    } else {
-      video.play();
-    }
-    setIsPlaying(!isPlaying);
-  };
-
-  const handleDragStart = (e) => {
-    setDragStart(e.clientX);
-  };
-
-  const handleDragEnd = (e) => {
-    const dragEnd = e.clientX;
-    if (dragEnd - dragStart > 100) {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? videos.length - 1 : prevIndex - 1
-      );
-    } else if (dragStart - dragEnd > 100) {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === videos.length - 1 ? 0 : prevIndex + 1
-      );
-    }
-  };
-
   return (
     <div className="intro">
       <div className="intro2">
         <div className="container">
           <div className="intro__container">
             <div className="intro__flex">
-              <h1 className="intro__title">{t(videos[currentIndex].title)}</h1>
+              <h1 className="intro__title">{t("video2_title")}</h1>
+              <p className="intro__text">{t("video2_description")}</p>
               <button onClick={handleOpen}>
                 <a className="btn intro__btn">{t("consultation_button")}</a>
               </button>
-            </div>
-            <div
-              className="intro__video-container"
-              onMouseDown={handleDragStart}
-              onMouseUp={handleDragEnd}
-            >
-              <video
-                className="intro__video"
-                ref={videoRef}
-                src={videos[currentIndex].video}
-                loop
-              />
-              <div className="intro__play-pause" onClick={handlePlayPause}>
-                {isPlaying ? (
-                  <PauseIcon style={{ fontSize: 60 }} />
-                ) : (
-                  <PlayArrowIcon style={{ fontSize: 60 }} />
-                )}
-              </div>
             </div>
           </div>
 

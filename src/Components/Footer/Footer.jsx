@@ -8,7 +8,6 @@ import YouTube from "../../img/youtube.png";
 import Instagram from "../../img/instagram.png";
 import Facebook from "../../img/facebook.png";
 import vk from "../../img/vk.png";
-import logo from "../../img/logoads2.jpg";
 import logo1 from "../../img/TAS2oqrangi.png";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -111,20 +110,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="footer__bottom">
-          <NavLink to={"/"}>
-            <img
-              src={logo}
-              alt={t("footer.logoAlt")}
-              className="footer__logo-img1"
-            />
-          </NavLink>
-          <p>{t("footer.team")}</p>
-          <p>
-            {t("footer.copyright")} {new Date().getFullYear()}{" "}
-            {t("footer.rights")}
-          </p>
         </div>
       </div>
     </footer>

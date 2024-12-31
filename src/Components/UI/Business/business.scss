@@ -1,11 +1,27 @@
 .business-slider {
   margin: 0;
-  background-color: #334248;
+  background: url("../../../img/introbg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 60px 0;
+  position: relative;
+  z-index: 9;
+
+  &__bg {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #00000069;
+    z-index: 99;
+  }
 
   h2 {
-    color: #fff;
-    font-size: 30px;
+    position: relative;
+    z-index: 999;
+    color: rgb(179, 105, 9);
+    font-size: 36px;
     margin-bottom: 30px;
   }
 
@@ -18,52 +34,37 @@
     display: flex !important;
     align-items: center;
     border-radius: 10px;
+    padding: 8px 20px;
     width: 668.529px;
     height: 224px;
+    background-color: rgba(253, 235, 211, 0.427);
 
     .business-slider__image {
-      max-width: 325px !important;
-      height: 224px;
+      max-width: 150px !important;
+      height: 150px;
       border-radius: 10px;
     }
 
     .business-slider__content {
-      background-color: #1d2e34;
       border-radius: 18px;
-      box-shadow: 0 6px 12px 0 #1d2e34;
       display: flex;
       flex-direction: column;
       height: 224px;
-      justify-content: space-between;
-      align-items: start;
+      justify-content: space-around;
+      align-items: end;
       padding: 10px 18px;
       width: 343.519px;
 
-      h3 {
-        color: #fff;
-        font-size: 18px;
-        line-height: 22px;
-        font-weight: 700;
-      }
-
       p {
-        color: #ccc;
+        color: #000000;
         font-size: 14px;
         line-height: 18px;
         max-width: 260px;
       }
 
-      .more-button {
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 16px;
+      .business-slider__logo {
+        width: 110px;
         cursor: pointer;
-        width: max-content;
-        background-color: #0a2b38;
-
-        &:hover {
-          background-color: #0a97bc;
-        }
       }
     }
   }
@@ -75,37 +76,22 @@
       display: none;
     }
   }
-}
-
-/* Yengil rejim */
-body.light-theme .business-slider {
-  background-color: #f8f9fa; /* Kun rejimi uchun fon rangi */
-
-  h2 {
-    color: #000; /* Kun rejimi uchun matn rangi */
-  }
-
-  .business-slider__item {
-    .business-slider__content {
-      background-color: #fff; /* Kun rejimi uchun kontent orqa foni */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Yengil soya */
-
-      h3 {
-        color: #000; /* Kun rejimi uchun h3 matn rangi */
-      }
-
-      p {
-        color: #333; /* Kun rejimi uchun paragraf matn rangi */
-      }
-
-      .more-button {
-        background-color: #007bff; /* Kun rejimi uchun button rangi */
-        color: #fff; /* Matn rangi */
-
-        &:hover {
-          background-color: #0056b3; /* Kun rejimi hover holatda */
-          transition: 0.3s ease;
+  .slick-dots {
+    margin-top: 10px !important;
+    position: relative;
+    li {
+      margin: 0;
+      button {
+        font-size: 16px;
+        &:before {
+          font-size: 10px;
+          color: rgba(255, 255, 255, 0.6); // Och seriy rang
+          transition: color 0.3s ease;
         }
+      }
+
+      &.slick-active button:before {
+        color: #ffffff;
       }
     }
   }

@@ -11,9 +11,9 @@
   "adsOnLedScreens": "Led ekranlarda reklama",
   "adsOnBillboards": "Bilboardlarda reklama",
   "workingHours": "9:00-17:00 du-ju",
-  "video1_title": "Yangi natijalarga erisha olasiz!",
-  "video2_title": "Xizmatlarimiz bilan to'liq tanishib chiqing",
-  "consultation_button": "Konsultatsiya olish",
+  "consultation_button": "Kirish",
+  "video2_title": "O'zbekiston Respublikasi \"Tasviriy oyina\" ijodiy uyushmasi",
+  "video2_description": "O'zbekiston Respublikasi Prezidenti tomonidan chiqarilayotgan qaror va qonunlarni ommaga yetqazish va targ'ibot-tashviqot ishlari bilan shug'ullanadi.",
   "welcome_message": "xush kelibsiz",
   "error_message": "Kirishda xatolik bor",
   "invalid_data_warning": "Kiritilgan ma'lumot noto'g'ri",
@@ -73,7 +73,6 @@
 
   "team": {
     "title": "Bizning jamoamiz",
-    "description": "Bu sizning buyurtmangizni bajaradigan jamoa sifatli, ishonchli va xavfsiz.",
     "full_list_button": "To'liq ro'yxatni ko'ring",
     "Baholash": "Baholash",
     "members": [
@@ -190,9 +189,11 @@
     "logoAlt": "Logo",
     "days": "Du-Ju",
     "location": "O'zbekiston barcha hududlarda",
-    "socials": "Bizning ijtimoiy tarmoqlarimiz",
-    "team": "Tasviriy oyna jamoasi",
-    "copyright": "Mualliflik © huquqi",
-    "rights": "Barcha huquqlar himoyalangan"
+    "socials": "Bizning ijtimoiy tarmoqlarimiz"
+  },
+
+  "slider": {
+    "youthWorks": "Yoshlar ishlari",
+    "agency": "agentligi"
   }
 }

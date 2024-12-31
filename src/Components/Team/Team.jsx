@@ -98,8 +98,8 @@ const Team = () => {
       <div className="container">
         <div className="team-slider__flex">
           <div className="team-slider__texts">
-            <h2>{t("team.title")}</h2>
-            <p>{t("team.description")}</p>
+            <h2>{t("team.title")}:</h2>
+            <p> </p>
           </div>
           <NavLink to="/teams">
             <button className="full-list-button btn">
@@ -127,13 +127,13 @@ const Team = () => {
               <p>{member.position}</p>
               <div className="social-links">
                 <a href={member.instagram}>
-                  <InstagramIcon style={{ fontSize: 30 }} />
+                  <InstagramIcon style={{ fontSize: 40 }} />
                 </a>
                 <a href={member.telegram}>
-                  <TelegramIcon style={{ fontSize: 30 }} />
+                  <TelegramIcon style={{ fontSize: 40 }} />
                 </a>
                 <a href={member.phone}>
-                  <PhoneIcon style={{ fontSize: 30 }} />
+                  <PhoneIcon style={{ fontSize: 40 }} />
                 </a>
               </div>
               <button className="rate-button btn1">{t("team.Baholash")}</button>

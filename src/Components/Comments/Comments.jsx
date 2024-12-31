@@ -105,21 +105,21 @@ const Comments = () => {
                   alt={comment.name}
                   className="comments__avatar"
                 />
-                <div className="comments__info">
-                  <h3 className="comments__name">{comment.name}</h3>
-                  <p className="comments__date">{comment.date}</p>
-                </div>
               </div>
-              <p className="comments__text">{comment.comment}</p>
-              <div className="comments__rating">
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <Star
-                    key={index}
-                    style={{
-                      color: index < comment.rating ? "#00c3ff" : "#ccc",
-                    }}
-                  />
-                ))}
+              <div className="comments__info">
+                <h3 className="comments__name">{comment.name}</h3>
+                <p className="comments__text">{comment.comment}</p>
+                <div className="comments__rating">
+                  {Array.from({ length: 5 }).map((_, index) => (
+                    <Star
+                      key={index}
+                      className="comments__star"
+                      style={{
+                        color: index < comment.rating ? "#FFFF00" : "#ccc",
+                      }}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           ))}

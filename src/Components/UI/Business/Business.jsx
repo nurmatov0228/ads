@@ -11,6 +11,7 @@ import image4 from "../../../img/snakers.jpg";
 import image5 from "../../../img/3d.jpeg";
 import image6 from "../../../img/kat.png";
 import image7 from "../../../img/bus.jpeg";
+import logo from "../../../img/logoads.png";
 import { useTranslation } from "react-i18next"; // import t o'zgaruvchisi
 
 const Business = () => {
@@ -77,6 +78,7 @@ const Business = () => {
 
   return (
     <div className="business-slider">
+      <div className="business-slider__bg"></div>
       <div className="container">
         <h2>{t("business.title")}</h2> {/* JSON faylidan tarjima olish */}
         <Slider {...settings}>
@@ -88,14 +90,12 @@ const Business = () => {
                 className="business-slider__image"
               />
               <div className="business-slider__content">
-                <h3>{item.title}</h3>
                 <p>{item.description}</p>
-                <button
-                  className="more-button btn1"
+                <img
+                  className="business-slider__logo"
                   onClick={() => handleMoreClick(item.id)}
-                >
-                  {t("business.more")} {/* JSON faylidan tarjima olish */}
-                </button>
+                  src={logo}
+                />
               </div>
             </div>
           ))}

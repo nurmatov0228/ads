@@ -1,5 +1,5 @@
 .comments {
-  background-color: #1e2b38; /* Tun rejimi uchun fon rangi */
+  background-color: rgb(16, 1, 252); /* Tun rejimi uchun fon rangi */
   color: #fff;
   padding: 20px;
   position: relative;
@@ -17,10 +17,6 @@
     margin-bottom: 20px;
     display: flex;
     gap: 7px;
-
-    &--highlight {
-      color: #00c3ff;
-    }
   }
 
   &__button {
@@ -39,15 +35,24 @@
   }
 
   &__item {
-    background-color: #2e3c4b; /* Tun rejimi uchun fon rangi */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
     padding: 20px;
     border-radius: 10px;
-    min-width: 300px; /* har bir sharhning minimal kengligi */
+    min-width: 300px;
     max-width: 608.095px;
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
     position: relative;
-    max-height: 224px;
+    height: 150px;
+
+    .comments__star {
+      font-size: 30px;
+    }
   }
 
   &__header {
@@ -57,9 +62,8 @@
   }
 
   &__avatar {
-    width: 50px !important;
-    height: 50px !important;
-    border-radius: 50%;
+    width: 90px !important;
+    height: 90px !important;
     margin-right: 10px;
   }
 
@@ -67,11 +71,7 @@
     .comments__name {
       font-size: 18px;
       font-weight: bold;
-    }
-
-    .comments__date {
-      font-size: 14px;
-      color: #999;
+      text-transform: capitalize;
     }
   }
 
@@ -129,10 +129,11 @@
 }
 
 .comments {
-  background-color: #1e2b38; /* Tun rejimi uchun fon rangi */
+  background-color: rgb(11, 0, 159); /* Tun rejimi uchun fon rangi */
   color: #fff;
   padding: 20px;
   position: relative;
+  text-transform: uppercase;
 
   &__modal {
     position: fixed;
@@ -215,18 +216,8 @@
 body.light-theme .comments {
   background-color: #f8f9fa; /* Kun rejimi uchun fon rangi */
   color: #000; /* Kun rejimi uchun matn rangi */
-
-  &__item {
-    background-color: #ffffff; /* Kun rejimi uchun fon rangi */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Yengil soya */
-  }
-
   &__title {
     color: #000; /* Kun rejimi uchun matn rangi */
-
-    &--highlight {
-      color: #007bff;
-    }
   }
 
   &__button {

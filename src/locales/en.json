@@ -11,10 +11,9 @@
   "adsOnLedScreens": "Ads on LED Screens",
   "adsOnBillboards": "Ads on Billboards",
   "workingHours": "9:00-17:00 Mon-Fri",
-
-  "video1_title": "You will achieve new results!",
-  "video2_title": "Get fully acquainted with our services",
-  "consultation_button": "Get a consultation",
+  "consultation_button": "Login",
+  "video2_title": "Creative Union \"Tasviriy Oyina\" of the Republic of Uzbekistan",
+  "video2_description": "Engages in promoting and delivering the decrees and laws issued by the President of the Republic of Uzbekistan to the public.",
   "welcome_message": "Welcome",
   "error_message": "There is an error in the submission",
   "invalid_data_warning": "The entered data is incorrect",
@@ -74,7 +73,6 @@
 
   "team": {
     "title": "Our Team",
-    "description": "This is the team that will fulfill your order, ensuring quality, reliability, and safety.",
     "full_list_button": "View Full List",
     "Baholash": "Evaluation",
     "members": [
@@ -191,9 +189,10 @@
     "logoAlt": "Logo",
     "days": "Mon-Fri",
     "location": "Across all regions of Uzbekistan",
-    "socials": "Our social networks",
-    "team": "Image window team",
-    "copyright": "Copyright ©",
-    "rights": "All rights reserved"
+    "socials": "Our social networks"
+  },
+  "slider": {
+    "youthWorks": "Youth Affairs",
+    "agency": "Agency"
   }
 }
