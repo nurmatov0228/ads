@@ -1,7 +1,4 @@
 {
-  "telegram": "Telegram",
-  "presentation": "Presentation (35 mb)",
-  "applyNow": "Apply Now",
   "home": "Home",
   "services": "Services",
   "onRoad": "On the Road",
@@ -10,8 +7,6 @@
   "roadAds": "Roadside Ads",
   "aboutUs": "About Us",
   "contact": "Contact",
-  "vacancy": "Vacancy",
-  "reviews": "Reviews",
   "adsOnBuses": "Ads on Buses",
   "adsOnLedScreens": "Ads on LED Screens",
   "adsOnBillboards": "Ads on Billboards",

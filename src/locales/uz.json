@@ -1,7 +1,4 @@
 {
-  "telegram": "Telegram",
-  "presentation": "Taqdimot (35 mb)",
-  "applyNow": "Arizangizni yuboring",
   "home": "Asosiy",
   "services": "Xizmatlar",
   "onRoad": "Yo'lbo'yida",
@@ -10,8 +7,6 @@
   "roadAds": "Katta yo'lda reklama",
   "aboutUs": "Biz haqimizda",
   "contact": "Kontakt",
-  "vacancy": "Vakansiya",
-  "reviews": "Sharhlar",
   "adsOnBuses": "Avtobuslarda reklama",
   "adsOnLedScreens": "Led ekranlarda reklama",
   "adsOnBillboards": "Bilboardlarda reklama",

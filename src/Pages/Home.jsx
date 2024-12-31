@@ -17,11 +17,11 @@ const Home = () => {
       <Sliders />
       <Intro />
       {/* <In /> */}
-      <Video />
+      {/* <Video /> */}
       <Business />
       <Team />
-      <Stats />
-      <Clients />
+      {/* <Stats /> */}
+      {/* <Clients /> */}
       <Contact />
       <Comments />
     </div>
