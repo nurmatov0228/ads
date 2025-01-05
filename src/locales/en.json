@@ -77,28 +77,60 @@
     "Baholash": "Evaluation",
     "members": [
       {
-        "name": "Alisa",
-        "position": "Designer"
+        "name": "URAZBAEV DARMENBEK TURDIBEKOVICH",
+        "position": "PRESIDENT OF THE REPUBLIC OF KARAKALPOGISTAN"
       },
       {
-        "name": "Mira",
-        "position": "Android Developer"
+        "name": "Mamarasulov Akrom Axmadjonovich",
+        "position": "Chairman of Andijan region"
       },
       {
-        "name": "Lisa",
-        "position": "Secretary"
+        "name": "Toshpulatov Jo'rabek",
+        "position": "Chairman of Bukhara region"
       },
       {
-        "name": "Pem",
-        "position": "Product Manager"
+        "name": "Begimkulov Oybek",
+        "position": "Chairman of Jizzakh region"
       },
       {
-        "name": "Nasha",
-        "position": "Blogger"
+        "name": "Makhmudov Dilmurod",
+        "position": "Chairman of Navoi region"
       },
       {
-        "name": "Feruza",
-        "position": "Head of Sales Department"
+        "name": "Mamadjonov Dilshod Makhmudovich",
+        "position": "Chairman of Namangan region"
+      },
+      {
+        "name": "Khalimov Iskandar",
+        "position": "Chairman of Samarkand region"
+      },
+      {
+        "name": "Yunusov Hakimjon Mukumovich",
+        "position": "Chairman of Syrdarya region"
+      },
+      {
+        "name": "Kholmirzaeva Feruza Abdullayevna",
+        "position": "Chairman of Surkhandarya region"
+      },
+      {
+        "name": "Gulyamov Murod Ismailovich",
+        "position": "Chairman of Tashkent region"
+      },
+      {
+        "name": "Saidtajiyev Azamat",
+        "position": "Chairman of Fergana region"
+      },
+      {
+        "name": "Karimov Dilshod",
+        "position": "Chairman of Kashkadarya region"
+      },
+      {
+        "name": "Komilov Shahrukh Timurbek o'g'li",
+        "position": "Chairman of Khorezm region"
+      },
+      {
+        "name": "Isfandiyor Latipov Khudoyorovich",
+        "position": "Unknown profession"
       }
     ]
   },
