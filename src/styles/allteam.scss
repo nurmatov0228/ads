@@ -1,10 +1,10 @@
 #allteam {
   .slider-container {
     max-width: 1380px;
+    margin: 0 auto; /* Markazlashtirish */
     overflow: hidden;
-
-    .slick-arrow {
-      display: none !important;
-    }
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Har bir qator uchun 4 ustun */
+    gap: 30px; /* Elementlar orasidagi masofa */
   }
 }

@@ -7,15 +7,17 @@ import qiz3 from "../img/qiz3.png";
 import qiz4 from "../img/qiz4.jpg";
 import qiz5 from "../img/qiz5.jpg";
 import qiz6 from "../img/qiz6.jpg";
+import oybekbegimqulov from "../img/oybekbegimqulov.jpg";
+import ravshanbegimov from "../img/ravshanbegimov.jpg";
+import xolmirzayevaferuza from "../img/xolmirzayevaferuza.jpg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { useTranslation } from "react-i18next";
-import Slider from "react-slick";
 
 const Allteam = () => {
   const { t } = useTranslation();
-  const [zoomedIndex, setZoomedIndex] = useState(null); // Zoomlangan rasm uchun state
+  const [zoomedIndex, setZoomedIndex] = useState(null);
 
   const teamMembers = [
     {
@@ -45,7 +47,7 @@ const Allteam = () => {
     {
       name: t("team.members.3.name"),
       position: t("team.members.3.position"),
-      image: qiz4,
+      image: oybekbegimqulov,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998990740500",
@@ -53,7 +55,7 @@ const Allteam = () => {
     {
       name: t("team.members.4.name"),
       position: t("team.members.4.position"),
-      image: qiz5,
+      image: qiz4,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998973660909",
@@ -85,7 +87,7 @@ const Allteam = () => {
     {
       name: t("team.members.8.name"),
       position: t("team.members.8.position"),
-      image: qiz6,
+      image: xolmirzayevaferuza,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998902266465",
@@ -134,58 +136,46 @@ const Allteam = () => {
 
   const handleZoomToggle = (index) => {
     if (zoomedIndex === index) {
-      setZoomedIndex(null); // Agar zoomlangan bo'lsa, kichraytirish
+      setZoomedIndex(null);
     } else {
-      setZoomedIndex(index); // Aks holda, zoom qilish
+      setZoomedIndex(index);
     }
-  };
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
   };
 
   return (
     <div className="team-slider" id="allteam">
       <div className="slider-container container">
-        <Slider {...settings}>
-          {teamMembers.map((member, index) => (
-            <div key={index} className="team-slider__item">
+        {teamMembers.map((member, index) => (
+          <div key={index} className="team-slider__item">
+            <div
+              className={`team-slider__image ${
+                zoomedIndex === index ? "zoomed" : ""
+              }`}
+            >
+              <img src={member.image} alt={member.name} />
               <div
-                className={`team-slider__image ${
-                  zoomedIndex === index ? "zoomed" : ""
-                }`}
+                className="zoom-icon"
+                onClick={() => handleZoomToggle(index)}
               >
-                <img src={member.image} alt={member.name} />
-                <div
-                  className="zoom-icon"
-                  onClick={() => handleZoomToggle(index)}
-                >
-                  <ZoomInIcon />
-                </div>
+                <ZoomInIcon />
               </div>
-              <h3>{member.name}</h3>
-              <p>{member.position}</p>
-              <div className="social-links">
-                <a href={member.instagram}>
-                  <InstagramIcon style={{ fontSize: 30 }} />
-                </a>
-                <a href={member.telegram}>
-                  <TelegramIcon style={{ fontSize: 30 }} />
-                </a>
-                <a href={member.phone}>
-                  <PhoneIcon style={{ fontSize: 30 }} />
-                </a>
-              </div>
-              <button className="rate-button btn1">{t("team.Baholash")}</button>
             </div>
-          ))}
-        </Slider>
+            <h3>{member.name}</h3>
+            <p>{member.position}</p>
+            <div className="social-links">
+              <a href={member.instagram}>
+                <InstagramIcon style={{ fontSize: 40 }} />
+              </a>
+              <a href={member.telegram}>
+                <TelegramIcon style={{ fontSize: 40 }} />
+              </a>
+              <a href={member.phone}>
+                <PhoneIcon style={{ fontSize: 40 }} />
+              </a>
+            </div>
+            <button className="rate-button btn1">{t("team.Baholash")}</button>
+          </div>
+        ))}
       </div>
     </div>
   );
