@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
+import logo from "../../../img/TAS2oqrangi.png";
 import "./sliders.scss";
 import gerb from "../../../img/gerb.png";
 
@@ -36,7 +37,7 @@ const Sliders = () => {
                 {t("slider.agency")}
               </span>
             </div>
-            <img src={gerb} alt="" className="slider-container-item__img" />
+            <img src={logo} alt="" className="slider-container-item__img" />
           </div>
           <div className="slider-container-item">
             <img src={gerb} alt="" />
@@ -48,7 +49,7 @@ const Sliders = () => {
                 {t("slider.agency")}
               </span>
             </div>
-            <img src={gerb} alt="" className="slider-container-item__img" />
+            <img src={logo} alt="" className="slider-container-item__img" />
           </div>
           <div className="slider-container-item">
             <img src={gerb} alt="" />
@@ -60,7 +61,7 @@ const Sliders = () => {
                 {t("slider.agency")}
               </span>
             </div>
-            <img src={gerb} alt="" className="slider-container-item__img" />
+            <img src={logo} alt="" className="slider-container-item__img" />
           </div>
         </Slider>
       </div>

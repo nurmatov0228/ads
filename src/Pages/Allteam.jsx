@@ -9,6 +9,8 @@ import qiz5 from "../img/qiz5.jpg";
 import qiz6 from "../img/qiz6.jpg";
 import oybekbegimqulov from "../img/oybekbegimqulov.jpg";
 import ravshanbegimov from "../img/ravshanbegimov.jpg";
+import YunusovHAkimjon from "../img/YunusovHAkimjon.jpg";
+import Xalimoviskandar from "../img/Xalimoviskandar.jpg";
 import xolmirzayevaferuza from "../img/xolmirzayevaferuza.jpg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
@@ -55,7 +57,7 @@ const Allteam = () => {
     {
       name: t("team.members.4.name"),
       position: t("team.members.4.position"),
-      image: qiz4,
+      image: qiz5,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998973660909",
@@ -71,7 +73,7 @@ const Allteam = () => {
     {
       name: t("team.members.6.name"),
       position: t("team.members.6.position"),
-      image: qiz6,
+      image: Xalimoviskandar,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998993699616",
@@ -79,7 +81,7 @@ const Allteam = () => {
     {
       name: t("team.members.7.name"),
       position: t("team.members.7.position"),
-      image: qiz6,
+      image: YunusovHAkimjon,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998994642054",
@@ -111,7 +113,7 @@ const Allteam = () => {
     {
       name: t("team.members.11.name"),
       position: t("team.members.11.position"),
-      image: qiz6,
+      image: qiz4,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998972006663",

@@ -14,7 +14,7 @@ const Services = () => {
       id: 1,
       image: image1,
       title: t("business.title1"), // JSON faylidan tarjima olish
-      description: t("business.description1"), // JSON faylidan tarjima olish
+      description: t("business.description1"), h
     },
   ];
 

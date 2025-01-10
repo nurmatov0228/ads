@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./topnav.scss";
-import uz from "../../img/uz.png";
-import en from "../../img/en.png";
-import ru from "../../img/ru.png";
 import logo from "../../img/TAS2oqrangi.png";
 import { useTranslation } from "react-i18next";
 import "../../i18n";
 import { NavLink } from "react-router-dom";
-import { Menu, MenuItem } from "@mui/material";
 
 const Topnav = () => {
   const { t, i18n } = useTranslation();
@@ -35,19 +31,9 @@ const Topnav = () => {
     setSelectedLanguage(savedLanguage || "uz");
   }, [i18n]);
 
-  const [anchorEl, setAnchorEl] = useState(null);
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
   return (
     <div className="header-top p-2">
-      <div className="container">
+      <div className="container2">
         <NavLink to="/" className="logo-wrapper">
           <img
             alt="in out"
@@ -74,43 +60,24 @@ const Topnav = () => {
             </option>
           </select>
           <nav className="navbar">
-            <div className="container">
-              <div className="navbar__container">
-                <div className="navbar__left">
-                  <NavLink to="/" className="navbar__link">
-                    {t("home")}
-                  </NavLink>
-                  <a className="navbar__link" onClick={handleClick}>
-                    {t("services")}
-                  </a>
-                  <Menu
-                    className="navbar__menu"
-                    anchorEl={anchorEl}
-                    open={Boolean(anchorEl)}
-                    onClose={handleClose}
-                  >
-                    <MenuItem className="menuitem" onClick={handleClose}>
-                      <NavLink to="/services">{t("onRoad")}</NavLink>
-                    </MenuItem>
-                    <MenuItem className="menuitem" onClick={handleClose}>
-                      <NavLink to="/services">{t("onBridges")}</NavLink>
-                    </MenuItem>
-                    <MenuItem className="menuitem" onClick={handleClose}>
-                      <NavLink to="/services">{t("ledScreen")}</NavLink>
-                    </MenuItem>
-                    <MenuItem className="menuitem" onClick={handleClose}>
-                      <NavLink to={"/services"}>{t("roadAds")}</NavLink>
-                    </MenuItem>
-                  </Menu>
-                  <NavLink to="/about" className="navbar__link">
-                    {t("aboutUs")}
-                  </NavLink>
-                  <NavLink to="/contact" className="navbar__link">
-                    {t("contact")}
-                  </NavLink>
-                </div>
+            {/* <div className="container"> */}
+            <div className="navbar__container">
+              <div className="navbar__left">
+                <NavLink to="/" className="navbar__link">
+                  {t("home")}
+                </NavLink>
+                <NavLink to="/services" className="navbar__link">
+                  {t("services")}
+                </NavLink>
+                <NavLink to="/about" className="navbar__link">
+                  {t("aboutUs")}
+                </NavLink>
+                <NavLink to="/contact" className="navbar__link">
+                  {t("contact")}
+                </NavLink>
               </div>
             </div>
+            {/* </div> */}
           </nav>
         </div>
       </div>

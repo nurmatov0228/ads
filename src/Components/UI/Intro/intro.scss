@@ -4,10 +4,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 600px;
+  height: 90vh !important;
   background-image: url("../../../img/introbg2.jpg");
-  background-size: auto;
-  background-position: center;
+  background-size: cover;
+  z-index: 10;
 
   .intro2 {
     height: 100%;
@@ -18,45 +18,6 @@
     justify-content: center;
     background-color: rgba(47, 47, 47, 0.3);
     position: absolute;
-  }
-  &__container {
-    display: flex;
-    margin-top: 30px;
-    justify-content: space-between;
-  }
-  &__flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 500px;
-    min-height: 380px;
-    width: 100%;
-  }
-  &__btn {
-    font-size: 36px;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-top: 20px;
-    padding: 12px 20px;
-    text-align: center;
-    width: max-content;
-    background-color: rgb(16, 1, 94) !important;
-    border: none !important;
-  }
-  &__title {
-    color: #fff;
-    font-size: 26px;
-    line-height: normal;
-    margin-right: 20px;
-    text-align: left;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-
-  &__text {
-    font-size: 16px;
-    line-height: 20px;
-    margin-top: -90px;
+    z-index: 11;
   }
 }

@@ -2,62 +2,67 @@
   background: url("../img/contactbg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 22px;
+  overflow: hidden;
 
   &__container {
-    max-width: 1380px;
+    max-width: 1200px; /* Kattalikni biroz qisqartirdik */
     margin: auto;
-    padding: 50px 0;
+    padding: 30px 0; /* Paddingni kichraytirdik */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     color: #000;
   }
+
   &__form-container {
     flex: 1;
-    max-width: 500px;
-    padding: 20px;
-    background-color: #ffffff; /* Kun rejimi uchun orqa fon rangi */
-    color: #000; /* Kun rejimi uchun matn rangi */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Yengil soya */
-    color: #fff;
+    max-width: 380px; /* Maksimal kenglikni kichraytirdik */
+    padding: 15px; /* Paddingni qisqartirdik */
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Soya o'lchami kichraytirildi */
   }
 
   &__form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px; /* Oraliqni qisqartirdik */
 
     &-group {
-      margin-bottom: 15px;
+      margin-bottom: 10px; /* Qisqartirish */
 
       label {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 3px; /* Oraliqni kichraytirdik */
+        font-size: 14px; /* Kattalikni kichraytirdik */
         font-weight: bold;
-        color: #000; /* Kun rejimi uchun label rangi */
+        color: #000;
       }
 
       input,
       textarea {
         width: 100%;
-        padding: 10px;
-        border-radius: 8px;
-        background-color: #f8f9fa; /* Kun rejimi uchun input va textarea orqa fon rangi */
-        color: #000; /* Kun rejimi uchun matn rangi */
+        padding: 8px; /* Paddingni qisqartirdik */
+        border-radius: 6px; /* Radiusni kichraytirdik */
+        background-color: #f8f9fa;
+        color: #000;
         border: 1px solid #ccc;
+        font-size: 14px; /* Matn o'lchamini qisqartirdik */
       }
 
       textarea {
         resize: none;
+        height: 50px; /* Balandlikni kichraytirdik */
       }
     }
   }
 
   &__title {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 38px;
-    margin-bottom: 40px;
+    font-size: 24px; /* Matn kattaligini qisqartirdik */
+    font-weight: 600; /* Qalinlikni ozgina pasaytirdik */
+    line-height: 30px;
+    margin-bottom: 20px; /* Oraliqni qisqartirdik */
     color: #000;
   }
 
@@ -66,28 +71,28 @@
     background-color: #217cff !important;
     border: 1px solid #0a97bc;
     color: #fff;
-    border-radius: 12px;
+    border-radius: 10px; /* Radiusni kichraytirdik */
     cursor: pointer;
     display: flex;
-    font-size: 16px;
-    font-weight: 600px;
-    gap: 10px;
+    font-size: 14px; /* Matn o'lchamini qisqartirdik */
+    font-weight: 500;
+    gap: 8px; /* Oraliqni qisqartirdik */
     justify-content: center;
-    padding: 15px 20px !important;
+    padding: 12px 16px !important; /* Paddingni qisqartirdik */
     text-align: center;
     transition: all 0.3s ease-out;
 
     &:hover {
-      background-color: #000000 !important; /* Kun rejimi hover holatda */
+      background-color: #000000 !important;
       transition: all 0.3s ease-out;
     }
   }
 
   &__image {
     img {
-      max-height: 810px;
-      max-width: 682px;
-      border-radius: 18px;
+      max-height: 600px; /* Rasmlarning maksimal balandligini kamaytirdik */
+      max-width: 500px; /* Maksimal kenglikni qisqartirdik */
+      border-radius: 12px; /* Radiusni kichraytirdik */
     }
   }
 }

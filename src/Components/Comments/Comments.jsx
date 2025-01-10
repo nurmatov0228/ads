@@ -5,24 +5,29 @@ import { useTranslation } from "react-i18next"; // i18next import
 import "./comments.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import EditNoteIcon from "@mui/icons-material/EditNote";
 import qiz1 from "../../img/qiz1.png";
 import qiz2 from "../../img/qiz2.png";
 import qiz3 from "../../img/qiz3.png";
+import qiz4 from "../../img/qiz4.jpg";
+import qiz5 from "../../img/qiz5.jpg";
+import qiz6 from "../../img/qiz6.jpg";
+import oybekbegimqulov from "../../img/oybekbegimqulov.jpg";
+import ravshanbegimov from "../../img/ravshanbegimov.jpg";
+import YunusovHAkimjon from "../../img/YunusovHAkimjon.jpg";
+import Xalimoviskandar from "../../img/Xalimoviskandar.jpg";
+import xolmirzayevaferuza from "../../img/xolmirzayevaferuza.jpg";
 
-const initialCommentsData = [
+const initialCommentsData1 = [
   {
     id: 1,
     name: "Pem",
-    date: "12.09.2023 05:14",
     comment: "nhnh",
-    rating: 3,
+    rating: 4,
     avatar: qiz1,
   },
   {
     id: 2,
     name: "Alisa",
-    date: "12.09.2023 13:05",
     comment: "Foydali xizmatlaringiz uchun raxmat",
     rating: 5,
     avatar: qiz2,
@@ -38,13 +43,107 @@ const initialCommentsData = [
 
 const Comments = () => {
   const { t } = useTranslation(); // i18next dan foydalanish
+  const initialCommentsData = [
+    {
+      id: 1,
+      name: t("team.members.0.name"),
+      comment: t("team.members.0.position"),
+      rating: 4,
+      avatar: qiz1,
+    },
+    {
+      id: 2,
+      name: t("team.members.1.name"),
+      comment: t("team.members.1.position"),
+      rating: 5,
+      avatar: qiz2,
+    },
+    {
+      id: 3,
+      name: t("team.members.2.name"),
+      comment: t("team.members.2.position"),
+      rating: 4,
+      avatar: qiz3,
+    },
+    {
+      id: 4,
+      name: t("team.members.3.name"),
+      comment: t("team.members.3.position"),
+      rating: 5,
+      avatar: oybekbegimqulov,
+    },
+    {
+      id: 5,
+      name: t("team.members.4.name"),
+      comment: t("team.members.4.position"),
+      rating: 4,
+      avatar: qiz5,
+    },
+    {
+      id: 6,
+      name: t("team.members.5.name"),
+      comment: t("team.members.5.position"),
+      rating: 5,
+      avatar: qiz6,
+    },
+    {
+      id: 7,
+      name: t("team.members.6.name"),
+      comment: t("team.members.6.position"),
+      rating: 4,
+      avatar: Xalimoviskandar,
+    },
+    {
+      id: 8,
+      name: t("team.members.7.name"),
+      comment: t("team.members.7.position"),
+      rating: 5,
+      avatar: YunusovHAkimjon,
+    },
+    {
+      id: 9,
+      name: t("team.members.8.name"),
+      comment: t("team.members.8.position"),
+      rating: 4,
+      avatar: xolmirzayevaferuza,
+    },
+    {
+      id: 10,
+      name: t("team.members.9.name"),
+      comment: t("team.members.9.position"),
+      rating: 5,
+      avatar: qiz6,
+    },
+    {
+      id: 11,
+      name: t("team.members.10.name"),
+      comment: t("team.members.10.position"),
+      rating: 4,
+      avatar: qiz6,
+    },
+    {
+      id: 12,
+      name: t("team.members.11.name"),
+      comment: t("team.members.11.position"),
+      rating: 5,
+      avatar: qiz4,
+    },
+    {
+      id: 13,
+      name: t("team.members.12.name"),
+      comment: t("team.members.12.position"),
+      rating: 4,
+      avatar: qiz6,
+    },
+    {
+      id: 14,
+      name: t("team.members.13.name"),
+      comment: t("team.members.13.position"),
+      rating: 5,
+      avatar: qiz6,
+    },
+  ];
   const [commentsData, setCommentsData] = useState(initialCommentsData);
-  const [isModalOpen, setModalOpen] = useState(false);
-  const [newComment, setNewComment] = useState({
-    name: "",
-    comment: "",
-    rating: 0,
-  });
 
   const settings = {
     dots: false,
@@ -54,31 +153,6 @@ const Comments = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2400,
-  };
-
-  const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setNewComment({ ...newComment, [name]: value });
-  };
-
-  const handleRatingChange = (rating) => {
-    setNewComment({ ...newComment, rating });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const newCommentData = {
-      ...newComment,
-      id: commentsData.length + 1,
-      date: new Date().toLocaleString(),
-      avatar: qiz1, // Avatarni hozircha statik qildik
-    };
-    setCommentsData([...commentsData, newCommentData]);
-    setNewComment({ name: "", comment: "", rating: 0 });
-    closeModal();
   };
 
   return (
@@ -91,12 +165,8 @@ const Comments = () => {
             </span>{" "}
             {t("comments.subtitle")}
           </h2>
-          <button className="comments__button btn" onClick={openModal}>
-            <EditNoteIcon />
-            {t("comments.writeReview")}
-          </button>
         </div>
-        <Slider {...settings}>
+        <Slider {...settings} className="comments__slider">
           {commentsData.map((comment) => (
             <div key={comment.id} className="comments__item">
               <div className="comments__header">
@@ -124,54 +194,6 @@ const Comments = () => {
             </div>
           ))}
         </Slider>
-
-        {isModalOpen && (
-          <div className="comments__modal">
-            <div className="comments__modal-content">
-              <button className="comments__modal-close" onClick={closeModal}>
-                &times;
-              </button>
-              <h2>{t("comments.writeReview")}</h2>
-              <form onSubmit={handleSubmit}>
-                <label>
-                  {t("comments.name")}
-                  <input
-                    type="text"
-                    name="name"
-                    value={newComment.name}
-                    onChange={handleInputChange}
-                    required
-                  />
-                </label>
-                <label>
-                  {t("comments.rating")}
-                  <div className="comments__rating-input">
-                    {Array.from({ length: 5 }).map((_, index) => (
-                      <Star
-                        key={index}
-                        style={{
-                          color: index < newComment.rating ? "#00c3ff" : "#ccc",
-                          cursor: "pointer",
-                        }}
-                        onClick={() => handleRatingChange(index + 1)}
-                      />
-                    ))}
-                  </div>
-                </label>
-                <label>
-                  {t("comments.feedback")}
-                  <textarea
-                    name="comment"
-                    value={newComment.comment}
-                    onChange={handleInputChange}
-                    required
-                  ></textarea>
-                </label>
-                <button type="submit">{t("comments.submit")}</button>
-              </form>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );

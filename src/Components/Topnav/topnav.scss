@@ -1,17 +1,16 @@
 .header-top {
-  position: relative;
-  z-index: 9;
   border-bottom: 1px solid rgba(229, 237, 239, 0.2);
   color: #fff;
   box-sizing: border-box;
 
-  .container {
+  .container2 {
     justify-content: space-between;
     align-items: center;
     display: flex;
-    gap: 50px;
+    gap: 60px;
 
     .logo-wrapper {
+      margin-left: 40px;
       max-width: 265px;
       img {
         height: 100%;
@@ -40,7 +39,7 @@ body.dark-theme {
     background-color: #a5acff;
     border-radius: 8px;
     border: 1px solid #212121;
-    margin-right: -20px;
+    margin-right: 30px;
     color: #000;
     padding: 7px 8px;
     cursor: pointer;
@@ -53,26 +52,8 @@ body.dark-theme {
   }
 }
 
-.css-13cymwt-control,
-.css-1nmdiq5-menu {
-  background-color: inherit !important;
-}
-
-.css-13cymwt-control {
-  min-height: 5px !important;
-}
-
-//navbar
-body.dark-theme {
-  background-color: #2c3e50;
-  color: #fff;
-}
-
 .navbar {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  margin-right: -83px;
+  width: 95%;
   background-color: rgb(16, 1, 94);
   box-sizing: border-box;
   text-transform: uppercase;
@@ -99,30 +80,15 @@ body.dark-theme {
     .navbar__link {
       color: var(--navbar-link-color);
       margin-right: 20px;
-      font-size: 20px;
+      font-size: 22px;
       font-weight: 400;
+      letter-spacing: 1px;
 
       &:hover {
         color: #00caff;
         transition: 0.3s;
       }
     }
-  }
-}
-
-.css-99wn1p-MuiList-root-MuiMenu-list {
-  padding: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  background-color: #2c3e50 !important;
-  color: #fff !important;
-}
-
-.menuitem {
-  &:hover {
-    cursor: pointer;
-    color: #00caff;
-    transition: 0.3s;
   }
 }
 

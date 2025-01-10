@@ -1,56 +1,14 @@
 {
   "home": "Home",
   "services": "Services",
-  "onRoad": "On the Road",
-  "onBridges": "On Bridges",
-  "ledScreen": "LED Screen",
-  "roadAds": "Roadside Ads",
   "aboutUs": "About Us",
   "contact": "Contact",
-  "adsOnBuses": "Ads on Buses",
-  "adsOnLedScreens": "Ads on LED Screens",
-  "adsOnBillboards": "Ads on Billboards",
-  "workingHours": "9:00-17:00 Mon-Fri",
-  "consultation_button": "Login",
-  "video2_title": "Creative Union \"Tasviriy Oyina\" of the Republic of Uzbekistan",
-  "video2_description": "Engages in promoting and delivering the decrees and laws issued by the President of the Republic of Uzbekistan to the public.",
-  "welcome_message": "Welcome",
-  "error_message": "There is an error in the submission",
   "invalid_data_warning": "The entered data is incorrect",
-  "become_client": "Become a client",
   "name_label": "Name",
   "email_label": "Email or Telegram",
   "phone_label": "Phone number",
   "message_label": "Your message",
   "send_button": "Send",
-
-  "map_title": "Places for your advertisement",
-  "map_place": "",
-  "location_popup": "Tashkent, Uzbekistan",
-  "allPosters": "All Posters",
-  "empty": "Empty",
-  "booked": "Booked",
-  "byRegion": "By Regions",
-  "flagPoles": "Flag Poles",
-  "billboards": "Billboards",
-  "bannerStands": "Banner Stands",
-  "prismatrons": "Prismatrons",
-  "securityWall": "Security Wall",
-  "cityFormats": "City Formats",
-  "ledMonitor": "LED Monitor",
-
-  "title": "Video",
-  "allVideos": "All Videos",
-  "image1": "Image 1",
-  "image2": "Image 2",
-  "image3": "Image 3",
-  "image4": "Image 4",
-  "image5": "Image 5",
-  "image6": "Image 6",
-  "image7": "Image 7",
-  "image8": "Image 8",
-  "image9": "Image 9",
-  "image10": "Image 10",
 
   "business": {
     "title": "What do we do?",
@@ -135,27 +93,6 @@
     ]
   },
 
-  "stats": {
-    "title": "We have",
-    "subtitle": "numbers available",
-    "employees": "Number of Employees",
-    "ad_campaigns": "Advertising campaigns launched",
-    "success_cases": "Successful cases"
-  },
-
-  "clients": {
-    "trusted_clients": "Trusted Clients",
-    "continue": "Continue... There is a place for your logo too",
-    "become_client": "Become a Client",
-    "name": "Name",
-    "email_or_telegram": "Email or Telegram",
-    "phone_number": "Phone Number",
-    "your_message": "Your Message",
-    "welcome": "Welcome!",
-    "error": "There was an error in the submission, please try again.",
-    "warning": "Please fill out all fields."
-  },
-
   "contact1": {
     "question": "What question do you have for us?",
     "name": "Name",
@@ -171,45 +108,9 @@
 
   "comments": {
     "title": "Comments",
-    "subtitle": "About Us",
-    "writeReview": "Write a Review",
-    "name": "Your Name",
-    "rating": "Rating",
-    "feedback": "Your Feedback",
-    "submit": "Submit"
+    "subtitle": "About Us"
   },
   "Video": "Video",
-
-  "about": {
-    "title": "About Us",
-    "description": {
-      "part1": "InOut offers a wide range of advertising placement services, with the most in-demand being outdoor advertising in Tashkent. You can place orders for advertisements on LED screens, as well as lightboxes and banners. Advertising is carried out as quickly as possible, guaranteed, and at affordable prices.",
-      "part2": "CLEAR BENEFIT",
-      "part3": "Outdoor advertising is an inexpensive and very effective way to provide your target audience with the necessary information. Using visiting cards for initial information presentation allows you to attract the attention of your target audience.",
-      "part4": "Using LED screens for outdoor advertising is one of the most promising formats, while simultaneously showcasing the high status of the company or organization advertising its goods (services)."
-    },
-    "statistics": {
-      "title": "Our brief statistics",
-      "successful_teams": "Successful teamwork",
-      "working_in_company": "Working in our company",
-      "promoted_in_social_media": "Promoted on social media",
-      "developed_and_launched": "Developed and launched",
-      "products_in_graph": "Products in the graph"
-    },
-    "find_us": "Find us on social media"
-  },
-
-  "vacancy1": {
-    "title": "Job Vacancies",
-    "required_skills": "Required Skills",
-    "more": "More",
-    "call_center_operator": "Call Center Operator",
-    "web_designer": "Web Designer",
-    "logistician": "Logistician",
-    "education": "Education",
-    "experience": "Experience",
-    "skills": "Skills"
-  },
 
   "notfound": {
     "iconAlt": "Not Found Icon",

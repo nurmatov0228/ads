@@ -83,7 +83,11 @@ const Business = () => {
         <h2>{t("business.title")}</h2> {/* JSON faylidan tarjima olish */}
         <Slider {...settings}>
           {items.map((item) => (
-            <div key={item.id} className="business-slider__item">
+            <div
+              onClick={() => handleMoreClick(item.id)}
+              key={item.id}
+              className="business-slider__item"
+            >
               <img
                 src={item.image}
                 alt={item.title}
@@ -91,11 +95,7 @@ const Business = () => {
               />
               <div className="business-slider__content">
                 <p>{item.description}</p>
-                <img
-                  className="business-slider__logo"
-                  onClick={() => handleMoreClick(item.id)}
-                  src={logo}
-                />
+                <img className="business-slider__logo" src={logo} />
               </div>
             </div>
           ))}

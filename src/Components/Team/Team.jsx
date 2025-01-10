@@ -10,6 +10,8 @@ import qiz5 from "../../img/qiz5.jpg";
 import qiz6 from "../../img/qiz6.jpg";
 import oybekbegimqulov from "../../img/oybekbegimqulov.jpg";
 import ravshanbegimov from "../../img/ravshanbegimov.jpg";
+import YunusovHAkimjon from "../../img/YunusovHAkimjon.jpg";
+import Xalimoviskandar from "../../img/Xalimoviskandar.jpg";
 import xolmirzayevaferuza from "../../img/xolmirzayevaferuza.jpg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
@@ -17,7 +19,6 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import ZoomInIcon from "@mui/icons-material/ZoomIn";
-import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./team.scss";
 
@@ -61,7 +62,7 @@ const Team = () => {
     {
       name: t("team.members.4.name"),
       position: t("team.members.4.position"),
-      image: qiz4,
+      image: qiz5,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998973660909",
@@ -77,7 +78,7 @@ const Team = () => {
     {
       name: t("team.members.6.name"),
       position: t("team.members.6.position"),
-      image: qiz6,
+      image: Xalimoviskandar,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998993699616",
@@ -85,7 +86,7 @@ const Team = () => {
     {
       name: t("team.members.7.name"),
       position: t("team.members.7.position"),
-      image: qiz6,
+      image: YunusovHAkimjon,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998994642054",
@@ -117,7 +118,7 @@ const Team = () => {
     {
       name: t("team.members.11.name"),
       position: t("team.members.11.position"),
-      image: qiz6,
+      image: qiz4,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998972006663",
@@ -168,11 +169,6 @@ const Team = () => {
             <h2>{t("team.title")}:</h2>
             <p> </p>
           </div>
-          <NavLink to="/teams">
-            <button className="full-list-button btn">
-              {t("team.full_list_button")}
-            </button>
-          </NavLink>
         </div>
         <Slider {...settings}>
           {teamMembers.map((member, index) => (
