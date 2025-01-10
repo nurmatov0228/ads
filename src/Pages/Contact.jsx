@@ -94,7 +94,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-page">
+    <div className="contact-page" id="contact">
       <div className="contact-page__container">
         <div className="contact-page__form-container">
           <form className="contact-page__form" onSubmit={handleSubmit}>

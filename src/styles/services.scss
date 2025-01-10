@@ -1,0 +1,19 @@
+#services {
+  border-radius: 0px;
+
+  .container {
+    width: 1200px;
+  }
+
+  .services__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .business-slider__item {
+    width: auto !important;
+  }
+}

@@ -72,9 +72,9 @@ const Topnav = () => {
                 <NavLink to="/about" className="navbar__link">
                   {t("aboutUs")}
                 </NavLink>
-                <NavLink to="/contact" className="navbar__link">
+                <a href="#contact" className="navbar__link">
                   {t("contact")}
-                </NavLink>
+                </a>
               </div>
             </div>
             {/* </div> */}
