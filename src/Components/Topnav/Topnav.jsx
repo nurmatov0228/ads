@@ -50,13 +50,13 @@ const Topnav = () => {
             onChange={(e) => changeLanguage(e.target.value)}
           >
             <option value="uz">
-              <span>uzb</span>
+              <span>Uz</span>
             </option>
             <option value="en">
-              <span>eng</span>
+              <span>En</span>
             </option>
             <option value="ru">
-              <span>рус</span>
+              <span>Ru</span>
             </option>
           </select>
           <nav className="navbar">
@@ -72,9 +72,10 @@ const Topnav = () => {
                 <NavLink to="/about" className="navbar__link">
                   {t("aboutUs")}
                 </NavLink>
-                <a href="#contact" className="navbar__link">
+                <NavLink to="/contact" className="navbar__link">
                   {t("contact")}
-                </a>
+                </NavLink>
+                {/* <a href="#contact" className="navbar__link"></a> */}
               </div>
             </div>
             {/* </div> */}

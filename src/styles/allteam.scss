@@ -1,11 +1,19 @@
 #allteam {
+  margin-top: 100px;
   border-radius: 0px;
+  background-color: rgb(31, 31, 140);
   .slider-container {
-    max-width: 1380px;
+    margin: 100px auto !important;
+    max-width: 1200px;
     margin: 0 auto; /* Markazlashtirish */
     overflow: hidden;
     display: grid; /* Grid layout */
     grid-template-columns: repeat(4, 1fr); /* Har bir qator uchun 4 ustun */
     gap: 30px; /* Elementlar orasidagi masofa */
   }
+}
+.allteam__title {
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
 }

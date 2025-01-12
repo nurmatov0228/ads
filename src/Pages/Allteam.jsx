@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import "../styles/allteam.scss";
 import ZoomInIcon from "@mui/icons-material/ZoomIn";
-import qiz1 from "../img/qiz1.png";
-import qiz2 from "../img/qiz2.png";
-import qiz3 from "../img/qiz3.png";
-import qiz4 from "../img/qiz4.jpg";
-import qiz5 from "../img/qiz5.jpg";
-import qiz6 from "../img/qiz6.jpg";
+
+import user from "../img/user.jpg";
 import oybekbegimqulov from "../img/oybekbegimqulov.jpg";
 import ravshanbegimov from "../img/ravshanbegimov.jpg";
 import YunusovHAkimjon from "../img/YunusovHAkimjon.jpg";
@@ -25,7 +21,7 @@ const Allteam = () => {
     {
       name: t("team.members.0.name"),
       position: t("team.members.0.position"),
-      image: qiz1,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998933628225",
@@ -33,7 +29,7 @@ const Allteam = () => {
     {
       name: t("team.members.1.name"),
       position: t("team.members.1.position"),
-      image: qiz2,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998999119009",
@@ -41,7 +37,7 @@ const Allteam = () => {
     {
       name: t("team.members.2.name"),
       position: t("team.members.2.position"),
-      image: qiz3,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998919771000 ",
@@ -57,7 +53,7 @@ const Allteam = () => {
     {
       name: t("team.members.4.name"),
       position: t("team.members.4.position"),
-      image: qiz5,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998973660909",
@@ -65,7 +61,7 @@ const Allteam = () => {
     {
       name: t("team.members.5.name"),
       position: t("team.members.5.position"),
-      image: qiz6,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998936965323",
@@ -97,7 +93,7 @@ const Allteam = () => {
     {
       name: t("team.members.9.name"),
       position: t("team.members.9.position"),
-      image: qiz6,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998903201047",
@@ -105,7 +101,7 @@ const Allteam = () => {
     {
       name: t("team.members.10.name"),
       position: t("team.members.10.position"),
-      image: qiz6,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998939800580",
@@ -113,7 +109,7 @@ const Allteam = () => {
     {
       name: t("team.members.11.name"),
       position: t("team.members.11.position"),
-      image: qiz4,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998972006663",
@@ -121,7 +117,7 @@ const Allteam = () => {
     {
       name: t("team.members.12.name"),
       position: t("team.members.12.position"),
-      image: qiz6,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998937433636",
@@ -129,7 +125,23 @@ const Allteam = () => {
     {
       name: t("team.members.13.name"),
       position: t("team.members.13.position"),
-      image: qiz6,
+      image: user,
+      instagram: "#",
+      telegram: "#",
+      phone: "tel: +998712445724",
+    },
+    {
+      name: t("team.members.14.name"),
+      position: t("team.members.14.position"),
+      image: ravshanbegimov,
+      instagram: "#",
+      telegram: "#",
+      phone: "tel: +998712445724",
+    },
+    {
+      name: t("team.members.15.name"),
+      position: t("team.members.14.position"),
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998712445724",
@@ -146,6 +158,7 @@ const Allteam = () => {
 
   return (
     <div className="team-slider" id="allteam">
+      <h2 className="allteam__title">Bizning jamoamiz</h2>
       <div className="slider-container container">
         {teamMembers.map((member, index) => (
           <div key={index} className="team-slider__item">

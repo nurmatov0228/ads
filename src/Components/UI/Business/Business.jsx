@@ -16,7 +16,7 @@ import { useTranslation } from "react-i18next"; // import t o'zgaruvchisi
 
 const Business = () => {
   const { t } = useTranslation(); // t o'zgaruvchisini chaqirish
-  const navigate = useNavigate(); // useNavigate hook'ini chaqiramiz
+  // const navigate = useNavigate(); // useNavigate hook'ini chaqiramiz
 
   const items = [
     {
@@ -72,9 +72,9 @@ const Business = () => {
     slidesToScroll: 1,
   };
 
-  const handleMoreClick = (id) => {
-    navigate(`/oneitem/${id}`); // OneItem sahifasiga o'tish
-  };
+  // const handleMoreClick = (id) => {
+  //   navigate(`/oneitem/${id}`); // OneItem sahifasiga o'tish
+  // };
 
   return (
     <div className="business-slider">
@@ -84,7 +84,7 @@ const Business = () => {
         <Slider {...settings}>
           {items.map((item) => (
             <div
-              onClick={() => handleMoreClick(item.id)}
+              // onClick={() => handleMoreClick(item.id)}
               key={item.id}
               className="business-slider__item"
             >

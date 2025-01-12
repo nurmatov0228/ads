@@ -1,8 +1,8 @@
 .business-slider {
-  margin: 0;
+  margin-top: 100px !important;
   background: url("../../../img/introbg3.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   padding: 30px 0;
   position: relative;
   z-index: 9;
@@ -40,7 +40,7 @@
     width: 668.529px;
     height: 184px;
     background-color: rgba(253, 235, 211, 0.534);
-    cursor: pointer;
+    // cursor: pointer;
 
     .business-slider__image {
       max-width: 150px !important;

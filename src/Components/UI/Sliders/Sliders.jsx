@@ -28,7 +28,7 @@ const Sliders = () => {
       <div className="container">
         <Slider {...settings}>
           <div className="slider-container-item">
-            <img src={gerb} alt="" />
+            <img className="gerb" src={gerb} alt="" />
             <div className="slider-container-item__flex">
               <h1 className="slider-container-item__title">
                 {t("slider.youthWorks")}
@@ -40,7 +40,7 @@ const Sliders = () => {
             <img src={logo} alt="" className="slider-container-item__img" />
           </div>
           <div className="slider-container-item">
-            <img src={gerb} alt="" />
+            <img className="gerb" src={gerb} alt="" />
             <div className="slider-container-item__flex">
               <h1 className="slider-container-item__title">
                 {t("slider.youthWorks")}
@@ -52,7 +52,7 @@ const Sliders = () => {
             <img src={logo} alt="" className="slider-container-item__img" />
           </div>
           <div className="slider-container-item">
-            <img src={gerb} alt="" />
+            <img className="gerb" src={gerb} alt="" />
             <div className="slider-container-item__flex">
               <h1 className="slider-container-item__title">
                 {t("slider.youthWorks")}

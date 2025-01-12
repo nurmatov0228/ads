@@ -1,0 +1,37 @@
+.reglament-info {
+  width: 100%;
+
+  background-image: url("../../../img/introbg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 100px 0;
+  &__conatiner {
+    width: 1200px;
+    margin: 100px auto;
+    // background-color: rgb(71, 71, 208);
+    padding: 200px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 111;
+
+    img {
+      width: 70%;
+    }
+  }
+  &__text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+  &__subtext {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+}

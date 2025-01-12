@@ -1,13 +1,14 @@
 .contact-page {
+  margin-top: 100px;
+  min-height: 80vh;
   background: url("../img/contactbg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 22px;
   overflow: hidden;
 
   &__container {
     max-width: 1200px; /* Kattalikni biroz qisqartirdik */
-    margin: auto;
+    margin:100px auto;
     padding: 30px 0; /* Paddingni kichraytirdik */
     display: flex;
     justify-content: space-evenly;

@@ -9,11 +9,12 @@ import image5 from "../img/3d.jpeg";
 import image6 from "../img/kat.png";
 import image7 from "../img/bus.jpeg";
 import { useTranslation } from "react-i18next";
-import logo from "../img/logoads.png";
+import Uyishma from "../Components/UI/Uyishma/Uyishma";
+import Reglament from "../Components/UI/Reglament/Reglament";
 
 const Services = () => {
   const { t } = useTranslation();
-  const navigate = useNavigate(); // useNavigate hook'ini chaqiramiz
+  // const navigate = useNavigate(); // useNavigate hook'ini chaqiramiz
 
   const item = [
     {
@@ -60,20 +61,23 @@ const Services = () => {
     },
   ];
 
-  const handleMoreClick = (id) => {
-    navigate(`/oneitem/${id}`); // OneItem sahifasiga o'tish
-  };
+  // const handleMoreClick = (id) => {
+  //   navigate(`/oneitem/${id}`); // OneItem sahifasiga o'tish
+  // };
 
   return (
     <div className="business-slider" id="services">
       <div className="container">
+        <Reglament />
+        <Uyishma />
         <h2>{t("business.title")}</h2>
+
         <div className="services__flex">
           {item.map((item) => (
             <div
               key={item.id}
               className="business-slider__item"
-              onClick={() => handleMoreClick(item.id)}
+              // onClick={() => handleMoreClick(item.id)}
             >
               <img
                 src={item.image}
@@ -82,7 +86,7 @@ const Services = () => {
               />
               <div className="business-slider__content">
                 <p>{item.description}</p>
-                <img className="business-slider__logo" src={logo} />
+                {/* <img className="business-slider__logo" src={logo} /> */}
               </div>
             </div>
           ))}
