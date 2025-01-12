@@ -15,14 +15,18 @@
     align-items: center;
     color: #000;
   }
+  &__title{
+    color: white !important;
+  }
 
   &__form-container {
     flex: 1;
     max-width: 380px; /* Maksimal kenglikni kichraytirdik */
     padding: 15px; /* Paddingni qisqartirdik */
-    background-color: #ffffff;
+    background-color: inherit;
     color: #000;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Soya o'lchami kichraytirildi */
+    box-shadow: 0 0 8px rgba(36, 35, 35, 0.993); /* Soya o'lchami kichraytirildi */
+    color: white !important;
   }
 
   &__form {
@@ -38,7 +42,7 @@
         margin-bottom: 3px; /* Oraliqni kichraytirdik */
         font-size: 14px; /* Kattalikni kichraytirdik */
         font-weight: bold;
-        color: #000;
+        color: white;
       }
 
       input,

@@ -35,68 +35,69 @@
     "Baholash": "Baholash",
     "members": [
       {
+        "name": "Latipov Isfandiyor Xudoyorovich",
+        "position": "O'zbekiston Respublikasi Tasviriy oyina ijodiy uyushmasi raisi"
+      },
+      {
+        "name": "Ravshan Begimov",
+        "position": "Samarqand viloyati"
+      },
+      {
         "name": "URAZBAEV DARMENBEK TURDIBEKOVICH",
-        "position": "QOROQOLPOG'ISTON RESPUBLIKASI RAISI"
+        "position": "QARAKALPOG'ISTON RESPUBLIKASI PREZIDENTI"
       },
       {
-        "name": "Mamarasulov Akrom Axmadjonovich",
-        "position": "Andijon viloyati raisi"
+        "name": "Mamarasulov Akram Axmadjonovich",
+        "position": "Andijon viloyati hokimi"
       },
       {
-        "name": "Toshpulatov Jo'rabek",
-        "position": "Buxoro viloyati raisi"
+        "name": "Jo'rabek Toshpulatov",
+        "position": "Buxoro viloyati hokimi"
       },
       {
-        "name": "Begimqulov Oybek",
-        "position": "Jizzax viloyati raisi"
+        "name": "Oybek Begimkulov",
+        "position": "Jizzax viloyati hokimi"
       },
       {
-        "name": "Maxmudov Dilmurod",
-        "position": "Navoiy viloyati raisi"
+        "name": "Dilmurod Makhmudov",
+        "position": "Navoiy viloyati hokimi"
       },
       {
-        "name": "Mamadjonov Dilshod Maxmudovich",
-        "position": "Namangan viloyati raisi"
+        "name": "Mamadjонов Dilshod Makhmudovich",
+        "position": "Namangan viloyati hokimi"
       },
       {
-        "name": "Xalimov Iskandar",
-        "position": "Samarqand viloyati raisi"
+        "name": "Iskandar Xalimov",
+        "position": "Samarqand viloyati hokimi"
       },
       {
-        "name": "Yunusov Hakimjon Mukumovich",
-        "position": "Sirdaryo viloyati raisi"
+        "name": "Yunusov Xakimjon Mukumovich",
+        "position": "Sirdaryo viloyati hokimi"
       },
       {
-        "name": "Xolmirzaeva Feruza Abdullayevna",
-        "position": "Surxondaryo viloyati raisi"
+        "name": "Xolmirlzaeva Feruza Abdullaevna",
+        "position": "Surxondaryo viloyati hokimi"
       },
       {
-        "name": "Gulyamov Murod Ismoilovich",
-        "position": "Toshkent viloyati raisi"
+        "name": "Gulyamov Murod Ismailovich",
+        "position": "Toshkent viloyati hokimi"
       },
       {
-        "name": "Saidtajiyev Azamat",
-        "position": "Farg'ona viloyati raisi"
+        "name": "Azamat Saidtaджiev",
+        "position": "Farg'ona viloyati hokimi"
       },
       {
-        "name": "Karimov Dilshod",
-        "position": "Qashqadaryo viloyati raisi"
+        "name": "Dilshod Karimov",
+        "position": "Qashqadaryo viloyati hokimi"
       },
       {
-        "name": "Komilov Shoxrux Timurbek o'g'li",
-        "position": "Xorazm viloyati raisi"
+        "name": "Komilov Shaxruh Timurbek o'g'li",
+        "position": "Xorazm viloyati hokimi"
       },
+
       {
-        "name": "Isfandiyor Latipov Xudoyorovich",
-        "position": "Noma'lum kasb"
-      },
-      {
-        "name": "Begimov Ravshan",
-        "position": "Samarkhand region"
-      },
-      {
-        "name": "Sherbo'tayeva Muhabbat",
-        "position": "Tashkent region"
+        "name": "Muhabbat Sherbotayeva",
+        "position": "Toshkent viloyati"
       }
     ]
   },

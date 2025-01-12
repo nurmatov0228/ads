@@ -29,7 +29,7 @@ const Allteam = () => {
     {
       name: t("team.members.1.name"),
       position: t("team.members.1.position"),
-      image: user,
+      image: ravshanbegimov,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998999119009",
@@ -133,7 +133,7 @@ const Allteam = () => {
     {
       name: t("team.members.14.name"),
       position: t("team.members.14.position"),
-      image: ravshanbegimov,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998712445724",

@@ -21,42 +21,91 @@ const Services = () => {
       id: 1,
       image: image1,
       title: t("business.title1"), // JSON faylidan tarjima olish
+      region: "Toshkent",
       description: t("business.description1"), // JSON faylidan tarjima olish
     },
     {
       id: 2,
       image: image2,
       title: t("business.title2"),
+      region: "Samarqand",
       description: t("business.description2"),
     },
     {
       id: 3,
       image: image3,
       title: t("business.title3"),
+      region: "Navoiy",
       description: t("business.description3"),
     },
     {
       id: 4,
       image: image4,
       title: t("business.title4"),
+      region: "Farg'ona",
       description: t("business.description4"),
     },
     {
       id: 5,
       image: image5,
       title: t("business.title5"),
+      region: "Namangan",
       description: t("business.description5"),
     },
     {
       id: 6,
       image: image6,
       title: t("business.title6"),
+      region: "Andijon",
       description: t("business.description6"),
     },
     {
       id: 7,
       image: image7,
       title: t("business.title7"),
+      region: "Jizzax",
+      description: t("business.description7"),
+    },
+    {
+      id: 7,
+      image: image7,
+      title: t("business.title7"),
+      region: "Sirdaryo",
+      description: t("business.description7"),
+    },
+    {
+      id: 7,
+      image: image7,
+      title: t("business.title7"),
+      region: "Buxoro",
+      description: t("business.description7"),
+    },
+    {
+      id: 7,
+      image: image7,
+      title: t("business.title7"),
+      region: "Qashqadaryo",
+      description: t("business.description7"),
+    },
+    {
+      id: 7,
+      image: image7,
+      title: t("business.title7"),
+      region: "Surxondaryo",
+      description: t("business.description7"),
+    },
+    {
+      id: 7,
+      image: image7,
+      title: t("business.title7"),
+      region: "Xorazm",
+      description: t("business.description7"),
+    },
+    {
+      id: 7,
+      image: image7,
+      title: t("business.title7"),
+      region: "Qoraqalpog'iston respublikasi",
       description: t("business.description7"),
     },
   ];
@@ -79,14 +128,17 @@ const Services = () => {
               className="business-slider__item"
               // onClick={() => handleMoreClick(item.id)}
             >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="business-slider__image"
-              />
-              <div className="business-slider__content">
-                <p>{item.description}</p>
-                {/* <img className="business-slider__logo" src={logo} /> */}
+              <div className="servise__region">{item.region}</div>
+              <div className="servise__data">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="business-slider__image"
+                />
+                <div className="business-slider__content">
+                  <p>{item.description}</p>
+                  {/* <img className="business-slider__logo" src={logo} /> */}
+                </div>
               </div>
             </div>
           ))}

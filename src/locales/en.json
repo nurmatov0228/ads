@@ -35,68 +35,69 @@
     "Baholash": "Evaluation",
     "members": [
       {
+        "name": "Latipov Isfandiyor Khudoyorovich",
+        "position": "Chairman of the Union of Artists of the Republic of Uzbekistan"
+      },
+      {
+        "name": "Ravshan Begimov",
+        "position": "Samarkand Region"
+      },
+      {
         "name": "URAZBAEV DARMENBEK TURDIBEKOVICH",
-        "position": "PRESIDENT OF THE REPUBLIC OF KARAKALPOGISTAN"
+        "position": "PRESIDENT OF THE REPUBLIC OF KARAKALPAKSTAN"
       },
       {
-        "name": "Mamarasulov Akrom Axmadjonovich",
-        "position": "Chairman of Andijan region"
+        "name": "Mamarasulov Akram Axmadjonovich",
+        "position": "Chairman of Andijan Region"
       },
       {
-        "name": "Toshpulatov Jo'rabek",
-        "position": "Chairman of Bukhara region"
+        "name": "Jo'rabek Toshpulatov",
+        "position": "Chairman of Bukhara Region"
       },
       {
-        "name": "Begimkulov Oybek",
-        "position": "Chairman of Jizzakh region"
+        "name": "Oybek Begimkulov",
+        "position": "Chairman of Jizzakh Region"
       },
       {
-        "name": "Makhmudov Dilmurod",
-        "position": "Chairman of Navoi region"
+        "name": "Dilmurod Makhmudov",
+        "position": "Chairman of Navoi Region"
       },
       {
         "name": "Mamadjonov Dilshod Makhmudovich",
-        "position": "Chairman of Namangan region"
+        "position": "Chairman of Namangan Region"
       },
       {
-        "name": "Khalimov Iskandar",
-        "position": "Chairman of Samarkand region"
+        "name": "Iskandar Khalimov",
+        "position": "Chairman of Samarkand Region"
       },
       {
         "name": "Yunusov Hakimjon Mukumovich",
-        "position": "Chairman of Syrdarya region"
+        "position": "Chairman of Syrdarya Region"
       },
       {
         "name": "Kholmirzaeva Feruza Abdullayevna",
-        "position": "Chairman of Surkhandarya region"
+        "position": "Chairman of Surkhandarya Region"
       },
       {
         "name": "Gulyamov Murod Ismailovich",
-        "position": "Chairman of Tashkent region"
+        "position": "Chairman of Tashkent Region"
       },
       {
-        "name": "Saidtajiyev Azamat",
-        "position": "Chairman of Fergana region"
+        "name": "Azamat Saidtajiyev",
+        "position": "Chairman of Fergana Region"
       },
       {
-        "name": "Karimov Dilshod",
-        "position": "Chairman of Kashkadarya region"
+        "name": "Dilshod Karimov",
+        "position": "Chairman of Kashkadarya Region"
       },
       {
         "name": "Komilov Shahrukh Timurbek o'g'li",
-        "position": "Chairman of Khorezm region"
+        "position": "Chairman of Khorezm Region"
       },
+
       {
-        "name": "Isfandiyor Latipov Khudoyorovich",
-        "position": "Unknown profession"
-      },
-      {
-        "name": "Begimov Ravshan",
-        "position": "Samarkhand region"
-      },
-      {
-        "name": "Sherbo'tayeva Muhabbat",
-        "position": "Tashkent region"
+        "name": "Muhabbat Sherbotayeva",
+        "position": "Tashkent Region"
       }
     ]
   },
