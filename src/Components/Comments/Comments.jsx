@@ -5,17 +5,13 @@ import { useTranslation } from "react-i18next"; // i18next import
 import "./comments.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import qiz1 from "../../img/qiz1.png";
-import qiz2 from "../../img/qiz2.png";
-import qiz3 from "../../img/qiz3.png";
-import qiz4 from "../../img/qiz4.jpg";
-import qiz5 from "../../img/qiz5.jpg";
-import qiz6 from "../../img/qiz6.jpg";
+
 import oybekbegimqulov from "../../img/oybekbegimqulov.jpg";
 import ravshanbegimov from "../../img/ravshanbegimov.jpg";
 import YunusovHAkimjon from "../../img/YunusovHAkimjon.jpg";
 import Xalimoviskandar from "../../img/Xalimoviskandar.jpg";
 import xolmirzayevaferuza from "../../img/xolmirzayevaferuza.jpg";
+import user from "../../img/user.jpg";
 
 const initialCommentsData1 = [
   {
@@ -23,21 +19,21 @@ const initialCommentsData1 = [
     name: "Pem",
     comment: "nhnh",
     rating: 4,
-    avatar: qiz1,
+    avatar: user,
   },
   {
     id: 2,
     name: "Alisa",
     comment: "Foydali xizmatlaringiz uchun raxmat",
     rating: 5,
-    avatar: qiz2,
+    avatar: user,
   },
   {
     id: 3,
     name: "Mira",
     comment: "Alo darajadagi xizmat uchun rahmat",
     rating: 4,
-    avatar: qiz3,
+    avatar: user,
   },
 ];
 
@@ -48,22 +44,22 @@ const Comments = () => {
       id: 1,
       name: t("team.members.0.name"),
       comment: t("team.members.0.position"),
-      rating: 4,
-      avatar: qiz1,
+      rating: 5,
+      avatar: user,
     },
     {
       id: 2,
       name: t("team.members.1.name"),
       comment: t("team.members.1.position"),
       rating: 5,
-      avatar: qiz2,
+      avatar: ravshanbegimov,
     },
     {
       id: 3,
       name: t("team.members.2.name"),
       comment: t("team.members.2.position"),
       rating: 4,
-      avatar: qiz3,
+      avatar: user,
     },
     {
       id: 4,
@@ -77,14 +73,14 @@ const Comments = () => {
       name: t("team.members.4.name"),
       comment: t("team.members.4.position"),
       rating: 4,
-      avatar: qiz5,
+      avatar: user,
     },
     {
       id: 6,
       name: t("team.members.5.name"),
       comment: t("team.members.5.position"),
       rating: 5,
-      avatar: qiz6,
+      avatar: user,
     },
     {
       id: 7,
@@ -112,35 +108,35 @@ const Comments = () => {
       name: t("team.members.9.name"),
       comment: t("team.members.9.position"),
       rating: 5,
-      avatar: qiz6,
+      avatar: user,
     },
     {
       id: 11,
       name: t("team.members.10.name"),
       comment: t("team.members.10.position"),
       rating: 4,
-      avatar: qiz6,
+      avatar: user,
     },
     {
       id: 12,
       name: t("team.members.11.name"),
       comment: t("team.members.11.position"),
       rating: 5,
-      avatar: qiz4,
+      avatar: user,
     },
     {
       id: 13,
       name: t("team.members.12.name"),
       comment: t("team.members.12.position"),
       rating: 4,
-      avatar: qiz6,
+      avatar: user,
     },
     {
       id: 14,
       name: t("team.members.13.name"),
       comment: t("team.members.13.position"),
       rating: 5,
-      avatar: qiz6,
+      avatar: user,
     },
   ];
   const [commentsData, setCommentsData] = useState(initialCommentsData);
@@ -149,7 +145,7 @@ const Comments = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2400,

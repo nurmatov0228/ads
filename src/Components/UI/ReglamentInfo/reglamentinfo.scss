@@ -1,4 +1,5 @@
 .reglament-info {
+
   width: 100%;
 
   background-image: url("../../../img/introbg2.jpg");
@@ -10,7 +11,7 @@
   &__conatiner {
     width: 1200px;
     margin: 100px auto;
-    background-color: rgb(71, 71, 208);
+    background-color: rgb(54, 54, 162);
     padding: 200px 100px;
     display: flex;
     align-items: center;
@@ -21,6 +22,7 @@
     color: white;
     position: relative;
     z-index: 111;
+    opacity: 0.7;
 
     img {
       width: 70%;
