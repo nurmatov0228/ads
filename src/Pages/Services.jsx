@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Routing uchun
+// import { useNavigate } from "react-router-dom"; // Routing uchun
 import "../styles/services.scss";
 import image1 from "../img/assalam.jpg";
 import image2 from "../img/bydsong.png"; // Rasm fayllari

@@ -31,7 +31,7 @@ const Footer = () => {
               <div className="footer__info-item">
                 <AccessTime className="footer__info-icon" />
                 <p>
-                  9:00-17:00 <br /> {t("footer.days")}
+                  24 / 7 <br /> {t("footer.days")}
                 </p>
               </div>
               <div className="footer__info-item">
@@ -47,11 +47,10 @@ const Footer = () => {
               <div className="footer__info-item">
                 <Email className="footer__info-icon" />
                 <p>
-                  <a href="mailto:info@inoutgroup.uz">info@inoutgroup.uz</a>{" "}
+                  <a href="tasviriyoyina.uz@yandex.uz">
+                    tasviriyoyina.uz@yandex.uz
+                  </a>{" "}
                   <br />
-                  <a href="mailto:inoutadsagency@gmail.com">
-                    inoutadsagency@gmail.com
-                  </a>
                 </p>
               </div>
               <div className="footer__info-item">
@@ -65,7 +64,7 @@ const Footer = () => {
                     <img src={Telegram} alt="Telegram" />
                   </a>
                   <a
-                    href="https://wa.me/yourwhatsappnumber"
+                    href="https://t.me/tasviriyoyina_uz"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -79,14 +78,14 @@ const Footer = () => {
                     <img src={Facebook} alt="Facebook" />
                   </a>
                   <a
-                    href="https://www.instagram.com/yourinstagram"
+                    href="https://www.instagram.com/tasviriyoyina_uz"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img src={Instagram} alt="Instagram" />
                   </a>
                   <a
-                    href="https://www.youtube.com/?hl=ru"
+                    href="https://www.youtube.com/channel/UCCzJ16FcOOhaCiFgh-f3u4w"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

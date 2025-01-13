@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import qiz1 from "../../img/qiz1.png";
-import qiz2 from "../../img/qiz2.png";
-import qiz3 from "../../img/qiz3.png";
-import qiz4 from "../../img/qiz4.jpg";
-import qiz5 from "../../img/qiz5.jpg";
-import qiz6 from "../../img/qiz6.jpg";
+
 import oybekbegimqulov from "../../img/oybekbegimqulov.jpg";
 import ravshanbegimov from "../../img/ravshanbegimov.jpg";
 import YunusovHAkimjon from "../../img/YunusovHAkimjon.jpg";
@@ -20,6 +15,7 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import { useTranslation } from "react-i18next";
+import user from "../../img/user.jpg";
 import "./team.scss";
 
 const Team = () => {
@@ -30,7 +26,7 @@ const Team = () => {
     {
       name: t("team.members.0.name"),
       position: t("team.members.0.position"),
-      image: qiz1,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998933628225",
@@ -38,7 +34,7 @@ const Team = () => {
     {
       name: t("team.members.1.name"),
       position: t("team.members.1.position"),
-      image: qiz2,
+      image: ravshanbegimov,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998999119009",
@@ -46,7 +42,7 @@ const Team = () => {
     {
       name: t("team.members.2.name"),
       position: t("team.members.2.position"),
-      image: qiz3,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998919771000 ",
@@ -62,7 +58,7 @@ const Team = () => {
     {
       name: t("team.members.4.name"),
       position: t("team.members.4.position"),
-      image: qiz5,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998973660909",
@@ -70,7 +66,7 @@ const Team = () => {
     {
       name: t("team.members.5.name"),
       position: t("team.members.5.position"),
-      image: qiz6,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998936965323",
@@ -102,7 +98,7 @@ const Team = () => {
     {
       name: t("team.members.9.name"),
       position: t("team.members.9.position"),
-      image: qiz6,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998903201047",
@@ -110,7 +106,7 @@ const Team = () => {
     {
       name: t("team.members.10.name"),
       position: t("team.members.10.position"),
-      image: qiz6,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998939800580",
@@ -118,7 +114,7 @@ const Team = () => {
     {
       name: t("team.members.11.name"),
       position: t("team.members.11.position"),
-      image: qiz4,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998972006663",
@@ -126,7 +122,7 @@ const Team = () => {
     {
       name: t("team.members.12.name"),
       position: t("team.members.12.position"),
-      image: qiz6,
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998937433636",
@@ -134,7 +130,23 @@ const Team = () => {
     {
       name: t("team.members.13.name"),
       position: t("team.members.13.position"),
-      image: qiz6,
+      image: user,
+      instagram: "#",
+      telegram: "#",
+      phone: "tel: +998712445724",
+    },
+    {
+      name: t("team.members.14.name"),
+      position: t("team.members.14.position"),
+      image: user,
+      instagram: "#",
+      telegram: "#",
+      phone: "tel: +998712445724",
+    },
+    {
+      name: t("team.members.15.name"),
+      position: t("team.members.14.position"),
+      image: user,
       instagram: "#",
       telegram: "#",
       phone: "tel: +998712445724",
