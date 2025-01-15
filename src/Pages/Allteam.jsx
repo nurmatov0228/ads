@@ -188,7 +188,6 @@ const Allteam = () => {
                 <PhoneIcon style={{ fontSize: 40 }} />
               </a>
             </div>
-            <button className="rate-button btn1">{t("team.Baholash")}</button>
           </div>
         ))}
       </div>
