@@ -23,7 +23,7 @@ const Allteam = () => {
       position: t("team.members.0.position"),
       image: user,
       instagram: "#",
-      telegram: "#",
+      telegram: "https://t.me/Begimov_uz",
       phone: "tel: +998933628225",
     },
     {
@@ -31,7 +31,7 @@ const Allteam = () => {
       position: t("team.members.1.position"),
       image: ravshanbegimov,
       instagram: "#",
-      telegram: "#",
+      telegram: "https://t.me/Begimov_uz",
       phone: "tel: +998999119009",
     },
     {
@@ -39,15 +39,15 @@ const Allteam = () => {
       position: t("team.members.2.position"),
       image: user,
       instagram: "#",
-      telegram: "#",
+      telegram: "https://t.me/Begimov_uz",
       phone: "tel: +998919771000 ",
     },
     {
       name: t("team.members.3.name"),
       position: t("team.members.3.position"),
-      image: oybekbegimqulov,
+      image: user,
       instagram: "#",
-      telegram: "#",
+      telegram: "https://t.me/Begimov_uz",
       phone: "tel: +998990740500",
     },
     {
@@ -55,31 +55,31 @@ const Allteam = () => {
       position: t("team.members.4.position"),
       image: user,
       instagram: "#",
-      telegram: "#",
+      telegram: "https://t.me/Begimov_uz",
       phone: "tel: +998973660909",
     },
     {
       name: t("team.members.5.name"),
       position: t("team.members.5.position"),
-      image: user,
+      image: oybekbegimqulov,
       instagram: "#",
-      telegram: "#",
+      telegram: "https://t.me/Begimov_uz",
       phone: "tel: +998936965323",
     },
     {
       name: t("team.members.6.name"),
       position: t("team.members.6.position"),
-      image: Xalimoviskandar,
+      image: user,
       instagram: "#",
-      telegram: "#",
+      telegram: "https://t.me/Begimov_uz",
       phone: "tel: +998993699616",
     },
     {
       name: t("team.members.7.name"),
       position: t("team.members.7.position"),
-      image: YunusovHAkimjon,
+      image: user,
       instagram: "#",
-      telegram: "#",
+      telegram: "https://t.me/Begimov_uz",
       phone: "tel: +998994642054",
     },
     {
@@ -87,39 +87,32 @@ const Allteam = () => {
       position: t("team.members.8.position"),
       image: xolmirzayevaferuza,
       instagram: "#",
-      telegram: "#",
+      telegram: "https://t.me/Begimov_uz",
       phone: "tel: +998902266465",
-    },
-    {
-      name: t("team.members.9.name"),
-      position: t("team.members.9.position"),
-      image: user,
-      instagram: "#",
-      telegram: "#",
-      phone: "tel: +998903201047",
     },
     {
       name: t("team.members.10.name"),
       position: t("team.members.10.position"),
-      image: user,
+      image: Xalimoviskandar,
       instagram: "#",
-      telegram: "#",
+      telegram: "https://t.me/Begimov_uz",
       phone: "tel: +998939800580",
     },
     {
-      name: t("team.members.11.name"),
-      position: t("team.members.11.position"),
-      image: user,
+      name: t("team.members.9.name"),
+      position: t("team.members.9.position"),
+      image: YunusovHAkimjon,
       instagram: "#",
-      telegram: "#",
-      phone: "tel: +998972006663",
+      telegram: "https://t.me/Begimov_uz",
+      phone: "tel: +998903201047",
     },
+
     {
       name: t("team.members.12.name"),
       position: t("team.members.12.position"),
       image: user,
       instagram: "#",
-      telegram: "#",
+      telegram: "https://t.me/Begimov_uz",
       phone: "tel: +998937433636",
     },
     {
@@ -127,7 +120,7 @@ const Allteam = () => {
       position: t("team.members.13.position"),
       image: user,
       instagram: "#",
-      telegram: "#",
+      telegram: "https://t.me/Begimov_uz",
       phone: "tel: +998712445724",
     },
     {
@@ -135,15 +128,7 @@ const Allteam = () => {
       position: t("team.members.14.position"),
       image: user,
       instagram: "#",
-      telegram: "#",
-      phone: "tel: +998712445724",
-    },
-    {
-      name: t("team.members.15.name"),
-      position: t("team.members.14.position"),
-      image: user,
-      instagram: "#",
-      telegram: "#",
+      telegram: "https://t.me/Begimov_uz",
       phone: "tel: +998712445724",
     },
   ];
@@ -175,13 +160,13 @@ const Allteam = () => {
                 <ZoomInIcon />
               </div>
             </div>
-            <h3>{member.name}</h3>
+            <h3 className="name__title">{member.name}</h3>
             <p>{member.position}</p>
             <div className="social-links">
               <a href={member.instagram}>
                 <InstagramIcon style={{ fontSize: 40 }} />
               </a>
-              <a href={member.telegram}>
+              <a target="_blank" href={`${member.telegram}`}>
                 <TelegramIcon style={{ fontSize: 40 }} />
               </a>
               <a href={member.phone}>

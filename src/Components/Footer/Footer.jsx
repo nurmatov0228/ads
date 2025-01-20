@@ -57,7 +57,7 @@ const Footer = () => {
                 <p>{t("footer.socials")}</p>
                 <div className="footer__socials">
                   <a
-                    href="https://t.me/yourtelegramchannel"
+                    href="https://t.me/Begimov_uz"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

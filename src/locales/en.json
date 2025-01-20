@@ -40,7 +40,7 @@
       },
       {
         "name": "Ravshan Begimov",
-        "position": "Samarkand Region"
+        "position": "Head of the Republican Information Department"
       },
       {
         "name": "URAZBAEV DARMENBEK TURDIBEKOVICH",
@@ -67,17 +67,19 @@
         "position": "Chairman of Namangan Region"
       },
       {
-        "name": "Iskandar Khalimov",
-        "position": "Chairman of Samarkand Region"
+        "name": "Kholmirzaeva Feruza Abdullayevna",
+        "position": "Chairman of Surkhandarya Region"
       },
+
       {
         "name": "Yunusov Hakimjon Mukumovich",
         "position": "Chairman of Syrdarya Region"
       },
       {
-        "name": "Kholmirzaeva Feruza Abdullayevna",
-        "position": "Chairman of Surkhandarya Region"
+        "name": "Iskandar Khalimov",
+        "position": "Chairman of Samarkand Region"
       },
+
       {
         "name": "Gulyamov Murod Ismailovich",
         "position": "Chairman of Tashkent Region"
@@ -93,11 +95,6 @@
       {
         "name": "Komilov Shahrukh Timurbek o'g'li",
         "position": "Chairman of Khorezm Region"
-      },
-
-      {
-        "name": "Muhabbat Sherbotayeva",
-        "position": "Tashkent Region"
       }
     ]
   },
